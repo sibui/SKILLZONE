@@ -1,0 +1,11 @@
+{
+	"courses": [
+		{
+			"courseName": "introHCI",
+			"author": "srk@ucsd.edu",
+			"description": "Get Introduced to HCI!",
+			"courseImageURL": "http://openclassroom.stanford.edu/MainFolder/courses/HCI/CS147Icon.jpg",
+			"courseLink": "http://d.ucsd.edu/class/intro-hci/2015/lab/lab1/index.html"
+		}
+	]
+}
