@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+	<title>Sign Up</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/stylesheet.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+   
+</head>
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="home.html">SkillZone</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="enrolled_classes.html">Enrolled Courses</a></li>
+            <li><a href="teaching_courses.html">Courses I teach</a></li>
+            <li><a href="course_category.html">Categories</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="sign_in.html">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<body>
+	<div class="container">
+		<form>
+
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">First name</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="First name">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">Last name</label>
+		    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Last name">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">Email address</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">Password</label>
+		    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Type your password">
+		  </div>
+		  <div>
+			  <label for="exampleInputPreference1">Customize your home page.</label>
+		  </div>
+		  
+		<div class="dropdown">
+		  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+		    Select your view
+		    <span class="caret"></span>
+		  </button>
+		  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+		    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">For teacher</a></li>
+		    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">For student</a></li>
+		  </ul>
+		  <h5>(This may be changed later in the <a href="settings.html">Setting</a>)</h5>
+		</div>
+
+		<div class="checkbox" class="span7 text-center">
+		    <label>
+		      <input type="checkbox"> I agree to the <a href="term_of_use.html">term of use</a>.
+		    </label>
+		 </div> 
+		</form>
+		 <a href="logged_in.html"><button  class="btn btn-default" role="button">Sign up</button></a>
+
+	</div>
+		
+</body>
+</html>
