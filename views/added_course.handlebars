@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Your Course has been Added!</title> 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+  <link href="css/stylesheet.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  
+</head>
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">SkillZone</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/">Home</a></li>
+            <li><a href="profile">Profile</a></li>
+            <li><a href="enrolled_classes">Enrolled Courses</a></li>
+            <li><a href="teaching_courses">Courses I teach</a></li>
+            <li><a href="course_category">Categories</a></li>
+            <li><a href="help">Help</a></li>
+            <li><a href="settings">Settings</a></li>
+            <li><a href="sign_in">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<body>
+{{#each courseDetails}}
+	<div class="container">
+	<header class="header">
+	<h1> Congratulations!</h1>
+	<p>{{courseName}} has been Added!</p>
+	</header>
+	<a href="class_page1?currentCourse={{courseName}}"<button  class="btn btn-default" role="button"> View Your Recently Added Class</button></a>
+	<a href="teacher_mode"><button  class="btn btn-default" role="button"> Return to Home</button></href>
+	</div>
+{{/each}}
+
+</body>
+</html>

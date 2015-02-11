@@ -10,7 +10,9 @@ var handlebars = require('express3-handlebars')
 
 var home = require('./routes/home');
 var add_a_course = require('./routes/add_a_course');
+var added_course = require('./routes/added_course');
 var class_page1 = require('./routes/class_page1');
+var confirmation = require('./routes/confirmation');
 var course_category = require('./routes/course_category');
 var enrolled_classes = require('./routes/enrolled_classes');
 var help = require('./routes/help');
@@ -54,7 +56,9 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', home.view);
 app.get('/add_a_course', add_a_course.view);
+app.get('/added_course', added_course.view);
 app.get('/class_page1', class_page1.view);
+app.get('/confirmation', confirmation.view);
 app.get('/course_category', course_category.view);
 app.get('/enrolled_classes', enrolled_classes.view);
 app.get('/help', help.view);

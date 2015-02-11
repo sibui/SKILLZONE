@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>SkillZone - Add a Course</title> 
+  <title>SkillZone - Confirm Course Details</title> 
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -39,14 +39,16 @@
       </div>
     </nav>
 <body>
-
+<h1><p>Almost there!</p></h1>
+<p> Please confirm your course details.</p>
 <div class="container">
-
-<form id="add_a_course" role="form" method="get" action="/confirmation">
+{{#each confirmDetails}}
+<form id="add_a_course" role="form" method="get" action="/added_course">
 
       <div class="form-group">
         <label for="exampleInputEmail1" >Course Title*</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="" name="courseName">
+		<li>Your Current Course Title: {{courseName}}</li>
+        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="" name="courseName" value="{{courseName}}">
       </div>
 
       <div>
@@ -81,7 +83,8 @@
 
       <div class="form-group">
         <label for="exampleInputDescription1">Course Description*</label>
-        <textarea type="text" class="form-control" rows="5" id="exampleInputDescriptions" placeholder="Briefly describe your course." name="courseDescription"></textarea>
+		<li>Your Current Course Description: {{courseDescription}}</li>
+        <textarea type="text" class="form-control" rows="5" id="exampleInputDescriptions" placeholder="Briefly describe your course." name="courseDescription" value="{{courseDescription}}"></textarea>
       </div>
 
       <div class="form-group">
@@ -91,12 +94,16 @@
 
       <div class="form-group">
         <label for="exampleInputLessonPicture1">Course Picture*</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Link to Image Here" name="coursePicture">
+		<li>Your Current Course Picture:</li>
+		<img src="{{coursePicture}}" height="300" width="300">
+        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Link to Image" name="coursePicture" value="{{coursePicture}}">
       </div>
 
       <div class="form-group">
         <label for="exampleInputLinkForMaterials">Link to Course Lectures*</label>
-        <input type="text" class="form-control" id="exampleInputLinkForMaterials" placeholder="Copy and paste your link for your course materials." name="lectureURL">
+		<li>Your Current Course Link:</li>
+		<a href="{{lectureURL}}">{{lectureURL}}</a>
+        <input type="text" class="form-control" id="exampleInputLinkForMaterials" placeholder="Copy and paste your link for your course materials." name="lectureURL" value="{{lectureURL}}">
       </div>
 
       <div class="form-group">
@@ -109,10 +116,9 @@
           <input type="checkbox"> I agree to the <a href="term_of_use.html">term of use</a>.
         </label>
      </div> 
-	 <button  class="btn btn-default" role="button"> Review and Confirm</button>
-	 <h5>We will confirm with you in the next page before submitting.</h5>
-    </form>
-          
+	 <button  class="btn btn-default" role="button"> Add Course</button>
+</form>
+{{/each}}          
 </div>
 	
 
