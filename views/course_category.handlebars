@@ -43,16 +43,17 @@
 	<div class="container">
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
-	<li>
-		<a href="class_page1.html">Link to an Class</a>
-	</li>
-	<li>
-		<a href="class_page1.html">Link to Class</a>
-	</li>
-	<li>
-		<a href="class_page1.html">Link to Class</a>
-	</li>	
-</div>
+	{{#each courses}}
+		<div class="courses" id="{{name}}">
+		<button class="btn btn-default btn-lg btn-block" role="button" >
+			<p><img src="{{courseImageURL}}" height="100" width="100"></p>
+			<p>Course Name: {{courseName}}</p>
+			<p>Author: {{author}}</p>
+			<p>Description: {{description}}</p>
+		</button>
+		</div>	
+	{{/each}}
+	</div>
 
 </body>
 </html>
