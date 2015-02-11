@@ -40,33 +40,14 @@
       </div>
     </nav>
 <body>
-	<div class="container">
-		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
-		<!-- p means paragraph -->
-		<div class="jumbotron">
-      <h1>Class Name</h1>
-      <p>one-sentence description of class</p>
+{{#each singleCourse}}
+	<div class="courses">
+      <h1>{{courseName}}</h1>
+	  <img src="{{courseImageURL}}" height="300" width="300">
+	  <p>By: {{author}}</p>
+      <p>Description:{{description}}</p>
+	  <p>Lecture Links: <a href="{{courseLink}}">{{courseLink}}</a>
     </div>
-
-
-		<h4>Class Requirements</h4>
-		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
-		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
-		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
-		  <ol>
-    Blah blahblhb 
-      <li><a href="#{{id}}">aaaaa</a></li>
-      <li>aeithoeht</li>
-    </ol>
-	 
-	      Blah balah 
-      <div class="project" id="{{id}}">
-        <a href="project/{{name}}" class="thumbnail">
-          <img src="" ... />
-          <p>Blah teacher</p>
-        </a>
-      </div>
-   
-
+{{/each}}
 </body>
 </html>

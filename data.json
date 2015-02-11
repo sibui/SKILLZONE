@@ -6,6 +6,13 @@
 			"description": "Get Introduced to HCI!",
 			"courseImageURL": "http://openclassroom.stanford.edu/MainFolder/courses/HCI/CS147Icon.jpg",
 			"courseLink": "http://d.ucsd.edu/class/intro-hci/2015/lab/lab1/index.html"
+		},
+		{
+			"courseName": "Basketball 101",
+			"author": "kobebryant@nba.edu",
+			"description": "Learn the basics of basketball!",
+			"courseImageURL": "https://cdn3.iconfinder.com/data/icons/pictofoundry-pro-vector-set/512/Basketball-512.png",
+			"courseLink": "http://www.nba.com/"
 		}
 	]
 }
