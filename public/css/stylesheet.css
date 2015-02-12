@@ -1,9 +1,14 @@
-.course h5,p {
+.course h5 {
     text-align: center;
 
 }
 
-h4{
+.course p {
+    text-align: center;
+
+}
+
+h4 {
     text-align: center;
     text-decoration: none;
 
@@ -23,7 +28,12 @@ body {
 	font-weight: bold;
 }
 
-.mode h5,p {
+.mode h5 {
+    text-align: center;
+
+}
+
+.mode p {
     text-align: center;
 
 }
