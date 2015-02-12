@@ -1,9 +1,9 @@
-.course p {
+.course h5,p {
     text-align: center;
 
 }
 
-h4,p {
+h4{
     text-align: center;
     text-decoration: none;
 
@@ -11,13 +11,29 @@ h4,p {
 
 
 .header {
+    text-align: center
+}
+
+
+body {
+	padding-top: 70px;
+}
+
+.FAQ h5{
+	font-weight: bold;
+}
+
+.mode h5,p {
     text-align: center;
+
 }
 
-
-body
-{
-padding-top: 70px;
+.profile {
+	margin-left: auto;
+    margin-right: auto;
 }
 
-
+img .desaturate {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+} /*Maybe it is because of the pictures are not local?? This is not working.*/
