@@ -48,45 +48,17 @@
     <div class="course">
       <div class="row">
 
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <div class="thumbnail">
-            <a href="class_page1"><img src="https://dujk9xa5fr1wz.cloudfront.net/course/240x135/16327_732b_9.jpg" alt="Enrolled Class">
-            <div class="caption">
-              <h5>Enrolled class 1</h5>
-              <p>...</p>
+        {{#each courses}}
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <div class="thumbnail">
+              <a href="class_page1?currentCourse={{courseName}}"><img src="{{courseImageURL}}" height="75" width="75" alt="Enrolled Class">
+              <div class="caption">
+                <h5>{{courseName}}</h5>
+                <p>{{description}}</p>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <div class="thumbnail">
-            <a href="class_page1"><img src="https://dujk9xa5fr1wz.cloudfront.net/course/240x135/16327_732b_9.jpg" alt="Enrolled Class">
-            <div class="caption">
-              <h5>Enrolled class 2</h5>
-              <p>...</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <div class="thumbnail">
-            <a href="class_page1"><img src="https://dujk9xa5fr1wz.cloudfront.net/course/240x135/16327_732b_9.jpg" alt="Enrolled Class">
-            <div class="caption">
-              <h5>Enrolled class 3</h5>
-              <p>...</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <div class="thumbnail">
-            <a href="class_page1"><img src="https://dujk9xa5fr1wz.cloudfront.net/course/240x135/16327_732b_9.jpg" alt="Enrolled Class">
-            <div class="caption">
-              <h5>Enrolled class 4</h5>
-              <p>...</p>
-            </div>
-          </div>
-        </div>
+       {{/each}}
  
      </div>
    </div>
