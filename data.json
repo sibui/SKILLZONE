@@ -13,6 +13,21 @@
 			"description": "Learn the basics of basketball!",
 			"courseImageURL": "https://cdn3.iconfinder.com/data/icons/pictofoundry-pro-vector-set/512/Basketball-512.png",
 			"courseLink": "http://www.nba.com/"
+		},
+		{
+			"courseName": "Piano Lessons",
+			"author": "pianoteacher@piano.com",
+			"description": "Become a piano pro!",
+			"courseImageURL": "http://www.steinway.com/images/piano-model/GP215EP.png",
+			"courseLink": "dropbox.com/pianolessons"
+		},
+		{
+			"courseName": "Art Lessons",
+			"author": "artteacher@art.com",
+			"description": "Become an Artist!",
+			"courseImageURL": "http://images.clipartpanda.com/art-palette-clip-art-Artist-Palette.png",
+			"courseLink": "dropbox.com/artlessons"
 		}
+		
 	]
 }
