@@ -72,7 +72,7 @@ app.get('/student_mode', student_mode.view);
 app.get('/taught_courses', taught_courses.view);
 app.get('/teacher_mode', teacher_mode.view);
 app.get('/teaching_courses', teaching_courses.view);
-app.get('term_of_use', term_of_use.view);
+app.get('/term_of_use', term_of_use.view);
 // Example route
 // app.get('/users', user.list);
 
