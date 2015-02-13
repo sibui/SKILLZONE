@@ -47,73 +47,39 @@
     <div class="course">
           <div class="row">
 
-            <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="thumbnail">
-                <a href="class_page1"><img src="https://dujk9xa5fr1wz.cloudfront.net/course/240x135/292694_5b5b_4.jpg" alt="Current Class">
-                <div class="caption">
-                  <h5>Current class 1</h5>
-                  <p>Description</p>
-                </div>
-              </div>
+		{{#each courses}}
+        <div class="col-xs-6 col-sm-4 col-md-3">
+          <div class="thumbnail">
+            <a href="class_page1?currentCourse={{courseName}}"><img src="{{courseImageURL}}" height="75" width="75" alt="Sample Class"></a>
+            <div class="caption">
+              <h5>{{courseName}}</h5>
+              <p>{{description}}</p>
             </div>
-
-            <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="thumbnail">
-                <a href="class_page1"><img src="https://dujk9xa5fr1wz.cloudfront.net/course/240x135/292694_5b5b_4.jpg" alt="Current Class">
-                <div class="caption">
-                  <h5>Current class 2</h5>
-                  <p>Description</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="thumbnail">
-                <a href="class_page1"><img src="https://dujk9xa5fr1wz.cloudfront.net/course/240x135/292694_5b5b_4.jpg" alt="Current Class">
-                <div class="caption">
-                  <h5>Current class 3</h5>
-                  <p>Description</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="thumbnail">
-                <a href="class_page1"><img src="https://dujk9xa5fr1wz.cloudfront.net/course/240x135/292694_5b5b_4.jpg" alt="Current Class">
-                <div class="caption">
-                  <h5>Current class 4</h5>
-                  <p>Description</p>
-                </div>
-              </div>
-            </div>
+          </div>
+        </div>
+		{{/each}}
      
          </div>
        </div>
 
-		<h4 href="courses">Recommended for you.</h4><hr>
+		<div class="course"><h4>Recommended for you.</h4><hr></div>
 
         <div class="course">
           <div class="row">
 
-            <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="thumbnail">
-                <a href="class_page1"><img src="https://dujk9xa5fr1wz.cloudfront.net/course/240x135/42319_cbfa_5.jpg" alt="Recommended Class">
-                <div class="caption">
-                  <h5>Recommended class 1</h5>
-                  <p>Description</p>
-                </div>
-              </div>
+    <div class="course">
+      <div class="row">
+		{{#each courses}}
+        <div class="col-xs-6 col-sm-4 col-md-3">
+          <div class="thumbnail">
+            <a href="class_page1?currentCourse={{courseName}}"><img src="{{courseImageURL}}" height="75" width="75" alt="Sample Class"></a>
+            <div class="caption">
+              <h5>{{courseName}}</h5>
+              <p>{{description}}</p>
             </div>
-
-            <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="thumbnail">
-                <a href="class_page1"><img src="https://dujk9xa5fr1wz.cloudfront.net/course/240x135/42319_cbfa_5.jpg" alt="Recommended Class">
-                <div class="caption">
-                  <h5>Recommended class 2</h5>
-                  <p>Description</p>
-                </div>
-              </div>
-            </div>
+          </div>
+        </div>
+		{{/each}}
      
          </div>
        </div>
