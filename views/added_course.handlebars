@@ -37,16 +37,16 @@
       </div>
     </nav>
 <body>
-{{#each courseDetails}}
-	<div class="container">
-	<header class="header">
-	<h1> Congratulations!</h1>
-	<p>{{courseName}} has been Added!</p>
-	</header>
-	<a href="class_page?currentCourse={{courseName}}"<button  class="btn btn-default" role="button"> View Your Recently Added Class</button></a>
-	<a href="teacher_mode"><button  class="btn btn-default" role="button"> Return to Home</button></href>
-	</div>
-{{/each}}
+  {{#each courseDetails}}
+  	<div class="container">
+    	<header class="header">
+      	<h1> Congratulations!</h1>
+      	<p>{{courseName}} has been Added!</p>
+    	</header>
+    	<a href="class_page?currentCourse={{courseName}}"<button  class="btn btn-default" role="button"> View Your Recently Added Class</button></a>
+    	<a href="teacher_mode"><button  class="btn btn-default" role="button"> Return to Home</button></a>
+  	</div>
+  {{/each}}
 
 </body>
 </html>
