@@ -31,7 +31,7 @@
             <li><a href="enrolled_classes">Enrolled Courses</a></li>
             <li><a href="teaching_courses">Courses I teach</a></li>
             <li><a href="courses">Courses</a></li>
-            <li><a href="help">Help</a></li>
+
             <li><a href="settings">Settings</a></li>
             <li><a href="sign_in">Login</a></li>
           </ul>
@@ -51,7 +51,7 @@
         {{#each courses}}
           <div class="col-xs-6 col-sm-4 col-md-3">
             <div class="thumbnail">
-              <a href="class_page1?currentCourse={{courseName}}"><img src="{{courseImageURL}}" alt="Enrolled Class">
+              <a href="class_page?currentCourse={{courseName}}"><img src="{{courseImageURL}}" alt="Enrolled Class">
               <div class="caption">
                 <h5>{{courseName}}</h5>
                 <p>{{description}}</p>

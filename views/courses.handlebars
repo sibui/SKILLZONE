@@ -31,7 +31,7 @@
             <li><a href="enrolled_classes">Enrolled Courses</a></li>
             <li><a href="teaching_courses">Courses I teach</a></li>
             <li><a href="courses">Courses</a></li>
-            <li><a href="help">Help</a></li>
+
             <li><a href="settings">Settings</a></li>
             <li><a href="sign_in">Login</a></li>
           </ul>
@@ -43,7 +43,7 @@
 
 	{{#each courses}}
 		<div class="courses" id="{{courseName}}">
-		<a href="class_page1?currentCourse={{courseName}}" name="{{courseName}}" onclick=buttonClicked(this)>
+		<a href="class_page?currentCourse={{courseName}}" name="{{courseName}}" onclick=buttonClicked(this)>
 			<button class="btn btn-default btn-lg btn-block" role="button">
 				<p><img src="{{courseImageURL}}" height="100" width="100"></p>
 				<p>Course Name: {{courseName}}</p>

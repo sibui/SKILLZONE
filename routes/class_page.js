@@ -13,7 +13,7 @@ exports.view = function(req, res){
 		}
 	}
 	console.log(data.courses[index].author);
-	res.render('class_page', {"singleCourse":[
+	res.render('class_page1', {"singleCourse":[
 		{
 			"courseName": data.courses[index].courseName,
 			"author": data.courses[index].author,
