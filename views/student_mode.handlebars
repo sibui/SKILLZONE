@@ -39,31 +39,30 @@
 <body>
 
 	<div class="container">
-
-		<h4 href="enrolled_classes">Current Courses</h4><hr>
-
+    <div class="titleLink">
+		<a href="enrolled_classes"><h4>Current Courses</h4></a><hr>
+    </div>
     <div class="course">
           <div class="row">
 
-		{{#each courses}}
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <div class="thumbnail">
-            <a href="class_page?currentCourse={{courseName}}"><img src="{{courseImageURL}}" height="75" width="75" alt="Sample Class"></a>
-            <div class="caption">
-              <h5>{{courseName}}</h5>
-              <p>{{description}}</p>
-            </div>
-          </div>
-        </div>
-		{{/each}}
+      		{{#each courses}}
+              <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="thumbnail">
+                  <a href="class_page?currentCourse={{courseName}}"><img src="{{courseImageURL}}" height="75" width="75" alt="Sample Class"></a>
+                  <div class="caption">
+                    <h5>{{courseName}}</h5>
+                    <p>{{description}}</p>
+                  </div>
+                </div>
+              </div>
+      		{{/each}}
      
          </div>
        </div>
 
-		<div class="course"><h4>Recommended for you.</h4><hr></div>
-
-        <div class="course">
-          <div class="row">
+    <div class="titleLink">
+    <a href="courses"><h4>Recommended for you</h4></a><hr>
+    </div>
 
     <div class="course">
       <div class="row">

@@ -45,6 +45,10 @@ body {
 	
 }
 
+.titleLink {
+    text-decoration: none;
+}
+
 img .desaturate {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
