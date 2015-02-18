@@ -20,7 +20,7 @@
             Through a series of weekly assignments, you will complete a quarter-long project in teams of three. 
             Each week, in small design studios, you present and discuss work with peers.
             The setting for the course is mobile web applications. The constraints of this small form factor set the stage for this challenge.",
-            "price": "$3000",
+            "price": "$3000"
 		},
 		{
 			"courseName": "Pro NBA Basketball Secrets",
@@ -33,7 +33,7 @@
 			"studentEnrolled": "CyrilWebb@example.com",
 			"summary": "Detailed diagrams and short clips will teach YOU what the pro trainers of the NBA don’t want you to know! 
 			What makes Kobe Bryant and James LeBron so good? You’ll find out after taking this course. Study up and then get out there and PLAY!",
-			"price": "$200",
+			"price": "$200"
 		},
 		{
 			"courseName": "Beginner Piano Lessons – Pop Music ",
@@ -47,7 +47,7 @@
 			"summary": "Want to get started playing piano? This series of short videos and easy piano songs will let you play simple pop songs at the end of the course. 
 			Want to play the accompanying notes of “Blank Space” by Taylor Swift? Or play a transcribed version of “Sugar” by Maroon 5?
 			Or suggest something to the instructor!",
-			"price": "$90",
+			"price": "$90"
 		},
 		{
 			"courseName": "Still Life Studies for Novices ",
@@ -62,7 +62,7 @@
 			We will be working with a wide variety of mediums, including watercolors, acrylics, oil pastels, and even digital art software. 
 			You are encouraged to find and assemble scenes to draw from, but example photos will also be given. 
 			The end result need not be photo-realistic, but critiques will be given by the instructor for every piece produced.",
-			"price": "$50",
+			"price": "$50"
 		},
 		{
 			"courseName": "Let’s Make Trigonometry Fun!",
@@ -77,7 +77,7 @@
 			Series of game demonstrations and activities will make learning polar coordinates a breeze! 
 			See how spirograms relate to various trigonometric functions! 
 			Tests unfortunately will be administered…but they are just a way of gauging your progress.",
-			"price": "$40 ",
+			"price": "$40 "
 		},
 		{
 			"courseName": "Intro to Making Delicious Java…Programs",
@@ -93,7 +93,7 @@
 			you will then percolate that knowledge into making a series of Java programs. 
 			It might be bitter at first…and might keep you up all night…and might even give you the jitters when overconsumed! 
 			But make no mistake, Java is a computer language worth learning and is highly recommended for newcomers.",
-			"price": "$100",
+			"price": "$100"
 		},
 		
 		{
@@ -109,7 +109,7 @@
 			Learn to choose the best drought-resistant plants for your climate. 
 			We will cover climate zones and smart ways of conserving water, as well as gardening basics like how to set up compost piles. 
 			Note: update pictures will be required weekly! ",
-			"price": "$50",
+			"price": "$50"
 		},
 		{
 			"courseName": "Game Characters for MMO Noobs",
@@ -124,7 +124,7 @@
 			This course will teach you how to create memorable, easily identifiable and distinguishable characters that even an antique from 2005 will handle! 
 			Learn about texture mapping, lighting, color schemes, basic animation, and common design tropes to avoid. We will be working with Zbrush. 
 			Critiques will be given for weekly projects. ",
-			"price": "$120",
+			"price": "$120"
 		},
 		{
 			"courseName": "Relax and De-stress",
@@ -155,8 +155,8 @@
 			We'll teach you how to do that, and more, in this course: step by step, over many labs. Individualized
 			help will be given, since this course is targeted towards those with minimal knowledge of web design. 
 			Basic knowledge of CSS and Html are required though.",
-			"price": "$200",
-		},
+			"price": "$200"
+		}
 
 		/*
 		{
