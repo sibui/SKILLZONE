@@ -9,30 +9,19 @@
 			"numberOfLectures": "5",
 			"lengthOfLectures": "4",
 			"studentEnrolled": "HildaWilkins@example.com",
-			"summary": "In this course, you will learn how to design technologies that bring people joy, rather than frustration.
-			To do this, you'll learn techniques for rapidly prototyping and evaluating multiple interface alternatives
-			— and why rapid prototyping and comparative evaluation are essential to excellent interaction design.
-			You'll learn how to conduct fieldwork with people to help generate design ideas. 
-			You'll learn how to make paper prototypes and low-fidelity mock-ups that are interactive — 
-			and how to use these designs to get feedback from teammates, clients, and users.
-		    You'll learn principles of visual design, perception and cognition so that you can effectively 
-			organize and present information with your interfaces. And you'll learn how to perform and analyze controlled experiments online.
-            Through a series of weekly assignments, you will complete a quarter-long project in teams of three. 
-            Each week, in small design studios, you present and discuss work with peers.
-            The setting for the course is mobile web applications. The constraints of this small form factor set the stage for this challenge.",
+			"summary": "intro to hci description",
             "price": "$3000"
 		},
 		{
 			"courseName": "Pro NBA Basketball Secrets",
 			"author":  "Alec Smith probasketball99887@gmail.com",
-			"description": "Sweet tips to improve your b-ball game!  ",
+			"description": "Sweet tips to improve your b-ball game!",
 			"courseImageURL": "http://static2.alpedhueznet.com/image_uploader/photos/small/basketball1.jpg",
 			"courseLink": "http://www.nba.com/",
 			"numberOfLectures": "5",
 			"lengthOfLectures": "4",
 			"studentEnrolled": "CyrilWebb@example.com",
-			"summary": "Detailed diagrams and short clips will teach YOU what the pro trainers of the NBA don’t want you to know! 
-			What makes Kobe Bryant and James LeBron so good? You’ll find out after taking this course. Study up and then get out there and PLAY!",
+			"summary": "pro nba basketball description",
 			"price": "$200"
 		},
 		{
@@ -44,9 +33,7 @@
 		    "numberOfLectures": "5",
 			"lengthOfLectures": "4",
 			"studentEnrolled": "Bhima Santiago@example.com",
-			"summary": "Want to get started playing piano? This series of short videos and easy piano songs will let you play simple pop songs at the end of the course. 
-			Want to play the accompanying notes of “Blank Space” by Taylor Swift? Or play a transcribed version of “Sugar” by Maroon 5?
-			Or suggest something to the instructor!",
+			"summary": "beginner piano lessons description",
 			"price": "$90"
 		},
 		{
@@ -58,10 +45,7 @@
 			"numberOfLectures": "5",
 			"lengthOfLectures": "4",
 			"studentEnrolled": "TienNapolielloexamplestudent@example.com",
-			"summary": "Budding artists must master the skill of producing still-life drawings in order to improve. 
-			We will be working with a wide variety of mediums, including watercolors, acrylics, oil pastels, and even digital art software. 
-			You are encouraged to find and assemble scenes to draw from, but example photos will also be given. 
-			The end result need not be photo-realistic, but critiques will be given by the instructor for every piece produced.",
+			"summary": "still life studies description",
 			"price": "$50"
 		},
 		{
@@ -73,10 +57,7 @@
 		    "numberOfLectures": "5",
 			"lengthOfLectures": "4",
 			"studentEnrolled": "FrancisNorris@gmail.com",
-			"summary": "Do you dread trigonometry? Fear not, for trigonometry can easily be broken down into manageable chunks. 
-			Series of game demonstrations and activities will make learning polar coordinates a breeze! 
-			See how spirograms relate to various trigonometric functions! 
-			Tests unfortunately will be administered…but they are just a way of gauging your progress.",
+			"summary": "lets make trig fun description",
 			"price": "$40 "
 		},
 		{
@@ -88,11 +69,7 @@
 		    "numberOfLectures": "5",
 			"lengthOfLectures": "4",
 			"studentEnrolled": "GalenosFiore@gmail.com",
-			"summary": "Java is the hottest object oriented programming language right now! 
-			Detailed video lectures will slowly drip knowledge into your brain, but that’s not all…
-			you will then percolate that knowledge into making a series of Java programs. 
-			It might be bitter at first…and might keep you up all night…and might even give you the jitters when overconsumed! 
-			But make no mistake, Java is a computer language worth learning and is highly recommended for newcomers.",
+			"summary": "into to making delicious java programs description",
 			"price": "$100"
 		},
 		
@@ -105,10 +82,7 @@
 		    "numberOfLectures": "5",
 			"lengthOfLectures": "4",
 			"studentEnrolled": "IahelUghi@gmail.com",
-			"summary": "Description: Gardening can be a challenge in arid lands, especially when water rationing is involved.
-			Learn to choose the best drought-resistant plants for your climate. 
-			We will cover climate zones and smart ways of conserving water, as well as gardening basics like how to set up compost piles. 
-			Note: update pictures will be required weekly! ",
+			"summary": "gardening for arid landscapes description",
 			"price": "$50"
 		},
 		{
@@ -120,10 +94,7 @@
 		    "numberOfLectures": "5",
 			"lengthOfLectures": "4",
 			"studentEnrolled": "NilamLindholm@hotmail.com",
-			"summary": "MMO’s have stringent graphic restrictions, considering their need to be playable on a wide array of machines. 
-			This course will teach you how to create memorable, easily identifiable and distinguishable characters that even an antique from 2005 will handle! 
-			Learn about texture mapping, lighting, color schemes, basic animation, and common design tropes to avoid. We will be working with Zbrush. 
-			Critiques will be given for weekly projects. ",
+			"summary": " game characters for mmo noobs description",
 			"price": "$120"
 		},
 		{
@@ -135,11 +106,7 @@
 		    "numberOfLectures": "5",
 			"lengthOfLectures": "4",
 			"studentEnrolled": "SìneNelson@yahoo.com",
-			"summary": "What is stress and how can we reduce it? 
-			Guided deep breathing exercises, stretching techniques, and mental strategies will be taught in this light, undemanding course.  
-			lso included are tips for a healthier diet and lifestyle changes to better accommodate exercise. 
-			Note: those suffering from panic attacks and serious anxiety should seek out professional guidance counselors. 
-			This course is not the same as therapy from a licensed counselor! ",
+			"summary": "relax and de-stress description ",
 			"price": "$30"
 		},
 		{
@@ -151,11 +118,8 @@
 		    "numberOfLectures": "5",
 			"lengthOfLectures": "4",
 			"studentEnrolled": "HelleGorka@yahoo.com",
-			"summary": "Want to store data for your own website? Want to connect your server to your website?
-			We'll teach you how to do that, and more, in this course: step by step, over many labs. Individualized
-			help will be given, since this course is targeted towards those with minimal knowledge of web design. 
-			Basic knowledge of CSS and Html are required though.",
+			"summary": " setting up servers description",
 			"price": "$200"
-		}		
+		}
 	]
 }
