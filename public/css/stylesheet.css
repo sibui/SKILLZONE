@@ -55,14 +55,16 @@ img .desaturate {
 } /*Maybe it is because of the pictures are not local?? This is not working.*/
 
 
-@media (min-width: 768px) {
-    .navbar .navbar-nav {
-        display: inline-block;
-        float: none;
-        vertical-align: top;
-    }
 
-    .navbar .navbar-collapse {
-        text-align: center;
-    }
+@media (max-width: 768px) {
+
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+}
+
+
 }
