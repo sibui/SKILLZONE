@@ -156,22 +156,6 @@
 			help will be given, since this course is targeted towards those with minimal knowledge of web design. 
 			Basic knowledge of CSS and Html are required though.",
 			"price": "$200"
-		}
-
-		/*
-		{
-			"courseName": " ",
-			"author": " ",
-			"description": " ",
-			"courseImageURL": " ",
-			"courseLink": " ",
-		    "numberOfLectures": "5",
-			"lengthOfLectures": "4",
-			"studentEnrolled": " ",
-			"summary": " ",
-			"price": " ",
-		},
-		*/
-		
+		}		
 	]
 }
