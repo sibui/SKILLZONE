@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>SkillZone - Welcome back!</title> 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+  <link href="css/stylesheet.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  
+</head>
+
+<body onload=createCookie()>
+	<div class="container">
+    <br><br><br>
+	<h4> Registering...</h4>
+{{#each userData}}	
+<div class="container" id="{{email}}" name="invis"></div>
+
+{{/each}}
+	
+<script>
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+    }
+    return "";
+}
+
+function createCookie()
+{
+
+		var user = decodeURIComponent(getDataUrl(String(window.location)).email);
+		document.cookie="username="+user+";path=/";
+		window.location="logged_in?pUser="+encodeURIComponent(user);
+}
+
+function getDataUrl(url) {
+  var url_data = url.match(/\?([^#]*)/i)[1];
+
+  var ar_url_data = url_data.split('&');
+
+  // traverse the array, and adds into an object elements name:value
+  var data_url = {};
+  for(var i=0; i<ar_url_data.length; i++) {
+    var ar_val = ar_url_data[i].split('=');
+    data_url[ar_val[0]] = ar_val[1];
+}
+return data_url;
+}
+</script>
+</body>
+</html>
+

@@ -21,32 +21,32 @@
 	    <p>SkillZone is an completely free online skill sharing service that you can learn by taking courses customized by other talented people; or if you are the one who is got talents, SkillZone is a place for you to share that as well! You can create an actitivity or course of your own to make friends and get paid.</p>
 	    <p>Sounds good? Simple fill in the form below and let's start learning and teaching!</p>
 			
-		<form>
+		<form method="get" action="/registration">
 
 		  <div class="form-group">
 		    <label for="exampleInputEmail1">First name</label>
-		    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="First name">
+		    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="First name" name="first" required>
 		  </div>
 		  <div class="form-group">
 		    <label for="exampleInputPassword1">Last name</label>
-		    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Last name">
+		    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last name" name="last" required>
 		  </div>
 		  <div class="form-group">
 		    <label for="exampleInputEmail1">Email address</label>
-		    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+		    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" name="email" required>
 		  </div>
 		  <div class="form-group">
-		    <label for="exampleInputPassword1">Set your Password</label>
+		    <label for="exampleInputPassword1">Set your Password(Doesn't work yet)</label>
 		    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Type your password">
 		  </div>
 
 		  <div class="form-group">
-		    <label for="exampleInputPassword2">Confirm your Password</label>
+		    <label for="exampleInputPassword2">Confirm your Password(Doesn't work yet)</label>
 		    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Type your password">
 		  </div>
 
 		  <div>
-			  <label for="exampleInputPreference1">Customize your home page</label>
+			  <label for="exampleInputPreference1">Customize your home page(Doesn't work yet)</label>
 		  </div>
 
 			<div class="radio">
@@ -66,11 +66,12 @@
 
 		<div class="checkbox" class="span7 text-center">
 		    <label>
-		      <input type="checkbox"> I agree to the <a href="term_of_use">term of use</a>.
+		      <input type="checkbox" required> I agree to the <a href="term_of_use">term of use</a>.
 		    </label>
-		 </div> 
+		 </div>
+		<button  class="btn btn-default" role="button" onclick="createCookie()">Sign up</button>		 
 		</form>
-		 <a href="logged_in"><button  class="btn btn-default" role="button">Sign up</button></a>
+	
 
 	</div>
 		

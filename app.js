@@ -27,6 +27,10 @@ var taught_courses = require('./routes/taught_courses');
 var teacher_mode = require('./routes/teacher_mode');
 var teaching_courses = require('./routes/teaching_courses');
 var term_of_use = require('./routes/term_of_use');
+var login_verification = require('./routes/login_verification');
+var enroll_in_class = require('./routes/enroll_in_class');
+var registration = require('./routes/registration');
+
 
 // Example route
 // var user = require('./routes/user');
@@ -73,6 +77,9 @@ app.get('/taught_courses', taught_courses.view);
 app.get('/teacher_mode', teacher_mode.view);
 app.get('/teaching_courses', teaching_courses.view);
 app.get('/term_of_use', term_of_use.view);
+app.get('/login_verification', login_verification.view);
+app.get('/enroll_in_class', enroll_in_class.view);
+app.get('/registration', registration.view);
 // Example route
 // app.get('/users', user.list);
 

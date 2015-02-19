@@ -27,9 +27,9 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="/">Home</a></li>
-            <li><a href="courses">Courses</a></li>
-            <li><a href="settings">Settings</a></li>
-            <li><a href="sign_in">Login</a></li>
+            <li><a href="/courses">Courses</a></li>
+            <li><a href="/settings">Settings</a></li>
+            <li><a href="/sign_in">Login</a></li>
           </ul>
         </div>
       </div>
@@ -39,9 +39,9 @@
 
 <div class="container">
 
-
+	<br><br><br>
     <div class="col-md-12 col-xs-12">
-        <a href="add_a_course"><button class="btn btn-info btn-lg btn-block" role="button" >Create a course now!</button></a>
+        <button class="btn btn-info btn-lg btn-block" role="button" onclick="addACourse()">Create a course now!</button>
     </div><br>
 
     <h4 href="teaching_courses">My Active Courses</h4><hr>
@@ -52,7 +52,7 @@
         {{#each courses}}
         <div class="col-xs-6 col-sm-4 col-md-3">
           <div class="thumbnail">
-            <a href="class_page?currentCourse={{courseName}}"><img src="{{courseImageURL}}" alt="Active Class"></a>
+            <a href="/class_page?currentCourse={{courseName}}"><img src="{{courseImageURL}}" alt="Active Class"></a>
             <div class="caption">
               <h5>{{courseName}}</h5>
               <p>{{description}}</p>
@@ -64,29 +64,28 @@
          </div>
        </div>
 
-    <h4 href="courses">My Past Courses</h4><hr>
-
-        <div class="achivedCourse">
-          <div class="row">
-
-            {{#each courses}}
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <div class="thumbnail">
-            <a href="class_page?currentCourse={{courseName}}"><img src="{{courseImageURL}}" alt="Archieved Class"></a>
-            <div class="caption">
-              <h5>{{courseName}}</h5>
-              <p>{{description}}</p>
-            </div>
-          </div>
-        </div>
-		{{/each}}
-     
-         </div>
-       </div>
 
 
   
 </div>
+
+<script>
+function addACourse()
+{
+	var user = getCookie("username");
+	window.location="/add_a_course?pUser="+encodeURIComponent(user);
+}
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+    }
+    return "";
+}
+</script>
 
 
 </body>

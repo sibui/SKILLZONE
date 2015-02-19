@@ -27,10 +27,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/">Home</a></li>
-            <li><a href="courses">Courses</a></li>
-            <li><a href="settings">Settings</a></li>
-            <li><a href="sign_in">Login</a></li>
+            <li><a href="/logged_in">Home</a></li>
+            <li><a href="/courses">Courses</a></li>
+            <li><a href="/settings">Settings</a></li>
+            <li><a href="/log_out">Logout</a></li>
           </ul>
         </div>
       </div>
@@ -44,6 +44,34 @@
       <p>Description:{{description}}</p>
 	  <p>Lecture Links: <a href="{{courseLink}}">{{courseLink}}</a>
     </div>
+		  <div class="form-group">
+		    <input type="hidden" class="form-control" id="courseEnroll" placeholder="Type your password" name="courseName" value="{{courseName}}">
+		  </div>
+		  <div class="form-group">
+		    <input type="hidden" class="form-control" id="user" placeholder="Type your password" name="pUser" value="">
+		  </div>
+
+		<button  class="btn btn-default" role="button" onclick="enrolledInClass()")>Enroll in Class</button>
 {{/each}}
+
+<script>
+
+function enrolledInClass()
+{
+	var user = getCookie("username");
+	var cN = document.getElementById("courseEnroll").value;
+	window.location="enroll_in_class?pUser="+user+"&courseName="+cN;
+}
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+    }
+    return "";
+}
+</script>
 </body>
 </html>

@@ -1,8 +1,19 @@
 // Get all of our friend data
-
+	var data = require('../data.json');
 exports.view = function(req, res){
 	console.log(req.query.currentCourse);
-	var data = require('../data.json');
+
+	console.log(data);
+	/*var temp = new Object();
+	temp["courseName"] = "added new test course in studentmode";
+	temp["author"] = "author";
+	temp["description"] ="hi";
+	temp["courseImageURL"] = "img";
+	temp["courseLink"]="http://dropbox.com";
+	temp["numberOfLectures"] = "5";
+	temp["lengthOfLectures"] = "4";
+	temp["studentEnrolled"] = "john@doe.com";
+	data["courses"].push(temp);*/
 	var index = -1;
 	for(var i=0; i< data.courses.length; i++)
 	{
@@ -12,6 +23,7 @@ exports.view = function(req, res){
 			break;
 		}
 	}
+	console.log(index);
 	console.log(data.courses[index].author);
 	res.render('class_page', {"singleCourse":[
 		{

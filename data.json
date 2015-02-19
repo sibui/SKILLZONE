@@ -2,31 +2,31 @@
 	"courses": [
 		{
 			"courseName": "Intro to HCI",
-			"author": "Professor Scott Klemmer, srk@ucsd.edu",
+			"author": "srk@ucsd.edu",
 			"description": "Get Introduced to HCI!",
 			"courseImageURL": "http://images2.udemy.com/course/240x135/2402_7b23_4.jpg",
 			"courseLink": "http://d.ucsd.edu/class/intro-hci/2015/lab/lab1/index.html",
 			"numberOfLectures": "5",
 			"lengthOfLectures": "4",
-			"studentEnrolled": "HildaWilkins@example.com",
+			"studentEnrolled": "john@doe.com",
 			"summary": "intro to hci description",
             "price": "$3000"
 		},
 		{
 			"courseName": "Pro NBA Basketball Secrets",
-			"author":  "Alec Smith probasketball99887@gmail.com",
+			"author":  "probasketball99887@gmail.com",
 			"description": "Sweet tips to improve your b-ball game!",
 			"courseImageURL": "http://static2.alpedhueznet.com/image_uploader/photos/small/basketball1.jpg",
 			"courseLink": "http://www.nba.com/",
 			"numberOfLectures": "5",
 			"lengthOfLectures": "4",
-			"studentEnrolled": "CyrilWebb@example.com",
+			"studentEnrolled": "john@doe.com",
 			"summary": "pro nba basketball description",
 			"price": "$200"
 		},
 		{
-			"courseName": "Beginner Piano Lessons – Pop Music ",
-			"author": "Bridget Jones, bridget.jones8876@gmail.com",
+			"courseName": "Beginner Piano Lessons Pop Music",
+			"author": "bridget.jones8876@gmail.com",
 			"description": "Start playing some pop songs with a real life tutor. No musical experience necessary!",
 			"courseImageURL": "https://c1.staticflickr.com/9/8574/15818390018_0fce2de33d_m.jpg",
 			"courseLink": "dropbox.com/pianolessons",
@@ -37,8 +37,8 @@
 			"price": "$90"
 		},
 		{
-			"courseName": "Still Life Studies for Novices ",
-			"author": "Jess Stuarts, jess.art.teacher343@gmail.com",
+			"courseName": "Still Life Studies for Novices",
+			"author": "jess.art.teacher343@gmail.com",
 			"description": "Still life with a wide array with mediums",
 			"courseImageURL": "http://render.fineartamerica.com/images/images-print-search/images-medium-5/preparation-still-life-mountain-dreams.jpg",
 			"courseLink": "dropbox.com/artlessons",
@@ -49,8 +49,8 @@
 			"price": "$50"
 		},
 		{
-			"courseName": "Let’s Make Trigonometry Fun!",
-			"author": "Robert Fuller, superfunmath@hotmail.com",
+			"courseName": "Lets Make Trigonometry Fun",
+			"author": "superfunmath@hotmail.com",
 			"description": "Let’s make trigonometry more palatable  ",
 			"courseImageURL": "http://o.quizlet.com/CdYd9Lr.EqTuNu5vbp3aiw_m.png ",
 			"courseLink": " #",
@@ -62,7 +62,7 @@
 		},
 		{
 			"courseName": "Intro to Making Delicious Java…Programs",
-			"author": "Leslie Brown, suchgreatcoffeecode@yahoo.com",
+			"author": "john@doe.com",
 			"description": "Java for beginners",
 			"courseImageURL": "http://media.publika.md/md/image/201301/w240/cup_of_java_by_neziak_27955900.png",
 			"courseLink": " ",
@@ -74,8 +74,8 @@
 		},
 		
 		{
-			"courseName": "Gardening for Arid Landscapes ",
-			"author": "Herbert Greene, thymetobotany@hotmail.com",
+			"courseName": "Gardening for Arid Landscapes",
+			"author": "john@doe.com",
 			"description": "How to cultivate a drought-resistant garden",
 			"courseImageURL": "http://mw2.google.com/mw-panoramio/photos/small/84749021.jpg",
 			"courseLink": " ",
@@ -87,7 +87,7 @@
 		},
 		{
 			"courseName": "Game Characters for MMO Noobs",
-			"author": "Victoria Stephens, allyourbase@gmail.com",
+			"author": "allyourbase@gmail.com",
 			"description": "3D Character Design and Modelling for MMO’s",
 			"courseImageURL": "http://ichef.bbci.co.uk/images/ic/240x135/p018ctdd.jpg",
 			"courseLink": " ",
@@ -99,7 +99,7 @@
 		},
 		{
 			"courseName": "Relax and De-stress",
-			"author": "Torleif Gibb, destressalot@gmail.com",
+			"author": "destressalot@gmail.com",
 			"description": "Help rewind and relax and prevent stress from overtaking your life",
 			"courseImageURL": "http://img0.yytcdn.com/uploads/artists/18539/AB1101373B1D783E848BB1AB7301557F.jpg",
 			"courseLink": " ",
@@ -111,7 +111,7 @@
 		},
 		{
 			"courseName": "Setting up Servers",
-			"author": "Mikhayhu Albertsen, serverserval@gmail.com",
+			"author": "serverserval@gmail.com",
 			"description": "How to set up your own server!",
 			"courseImageURL": "http://farm3.staticflickr.com/2461/3726757043_6cb518e5eb_m.jpg",
 			"courseLink": " ",
@@ -120,6 +120,22 @@
 			"studentEnrolled": "HelleGorka@yahoo.com",
 			"summary": " setting up servers description",
 			"price": "$200"
+		}
+	],
+	"users":[
+		{
+			"email": "John@doe.com",
+			"first": "John",
+			"last": "Doe",
+			"image": "http://allenbukoff.com/newwavepsychology/JohnDoeMasthead.jpg",
+			"summary": "I'm awesome!"
+		},
+		{
+			"email": "Jane@Roe.com",
+			"first": "Jane",
+			"last": "Roe",
+			"image": "http://allenbukoff.com/newwavepsychology/JohnDoeMasthead.jpg",
+			"summary": "I'm cool!"
 		}
 	]
 }

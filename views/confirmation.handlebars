@@ -26,10 +26,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/">Home</a></li>
-            <li><a href="courses">Courses</a></li>
-            <li><a href="settings">Settings</a></li>
-            <li><a href="sign_in">Login</a></li>
+            <li><a href="/logged_in">Home</a></li>
+            <li><a href="/courses">Courses</a></li>
+            <li><a href="/settings">Settings</a></li>
+            <li><a href="/log_out">Logout</a></li>
           </ul>
         </div>
       </div>
@@ -41,6 +41,10 @@
 {{#each confirmDetails}}
 <form id="add_a_course" role="form" method="get" action="/added_course">
 
+	  <div class="form-group">
+        <input type="hidden" class="form-control" id="exampleInputEmail1" placeholder="" name="pUser" value="{{author}}">
+      </div>
+	  
       <div class="form-group">
         <label for="exampleInputEmail1" >Course Title*</label>
 		<li>Your Current Course Title: {{courseName}}</li>
@@ -116,8 +120,6 @@
 </form>
 {{/each}}          
 </div>
-	
-
 
 </body>
 </html>

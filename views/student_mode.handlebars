@@ -26,12 +26,12 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/">Home</a></li> <!--toDo-->
+            <li><a href="/logged_in">Home</a></li> <!--toDo-->
  
-            <li><a href="courses">Courses</a></li>
+            <li><a href="/courses">Courses</a></li>
 
-            <li><a href="settings">Settings</a></li>
-            <li><a href="sign_in">Login</a></li>
+            <li><a href="/settings">Settings</a></li>
+            <li><a href="/log_out" ">Logout</a></li>
           </ul>
         </div>
       </div>
@@ -40,7 +40,7 @@
 
 	<div class="container">
     <div class="titleLink">
-		<a href="enrolled_classes"><h4>Current Courses</h4></a><hr>
+		<br><br><br><h4>Current Courses</h4><hr>
     </div>
     <div class="course">
           <div class="row">
@@ -48,7 +48,7 @@
       		{{#each courses}}
               <div class="col-xs-6 col-sm-4 col-md-3">
                 <div class="thumbnail">
-                  <a href="class_page?currentCourse={{courseName}}"><img src="{{courseImageURL}}" height="75" width="75" alt="Sample Class"></a>
+                  <a href="/class_page?currentCourse={{courseName}}"><img src="{{courseImageURL}}" height="75" width="75" alt="Sample Class"></a>
                   <div class="caption">
                     <h5>{{courseName}}</h5>
                     <p>{{description}}</p>
@@ -59,33 +59,9 @@
      
          </div>
        </div>
-
-    <div class="titleLink">
-    <a href="courses"><h4>Recommended for you</h4></a><hr>
-    </div>
-
-    <div class="course">
-      <div class="row">
-		{{#each courses}}
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <div class="thumbnail">
-            <a href="class_page?currentCourse={{courseName}}"><img src="{{courseImageURL}}" alt="Sample Class"></a>
-            <div class="caption">
-              <h5>{{courseName}}</h5>
-              <p>{{description}}</p>
-            </div>
-          </div>
-        </div>
-		{{/each}}
-     
-         </div>
-       </div>
-
-
 	
 </div>
 		
-
 
 </body>
 </html>
