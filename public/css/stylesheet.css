@@ -60,10 +60,10 @@ img .desaturate {
 
 .navbar-brand {
     position: absolute;
-    width: 100%;
+    width: 50%;
     left: 0;
     text-align: center;
-    margin: auto;
+    margin-left: 5.50em;
 }
 
 
