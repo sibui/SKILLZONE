@@ -49,6 +49,17 @@ body {
     text-decoration: none;
 }
 
+.thumbnails {
+    text-align:center;
+    display: inline-block;
+    float: none;
+}
+
+.thumbnails > li {
+     /* this is the part that makes it work */
+}
+
+
 img .desaturate {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
