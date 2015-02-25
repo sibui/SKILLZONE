@@ -39,7 +39,7 @@
 <p> Please confirm your course details.</p>
 <div class="container">
 {{#each confirmDetails}}
-<form id="add_a_course" role="form" method="get" action="/added_course">
+<form id="add_a_course" role="form" method="get" action="/added_course" onsubmit="changeToCurrent()">
 
 	  <div class="form-group">
         <input type="hidden" class="form-control" id="exampleInputEmail1" placeholder="" name="pUser" value="{{author}}">
@@ -47,71 +47,43 @@
 	  
       <div class="form-group">
         <label for="exampleInputEmail1" >Course Title*</label>
-		<li>Your Current Course Title: {{courseName}}</li>
-        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="" name="courseName" value="{{courseName}}">
+		<li>Your Current Course Title: <strong id="currentCourseTitle">{{courseName}}</strong></li>
+        <input  type="text" class="form-control" id="courseName" placeholder="" name="courseName" value="{{courseName}}" >
+		<button  class="btn btn-default" type="button" id="editCourseTitle">Edit Course Title</button>
       </div>
 
-      <div>
-        <label for="exampleInputPreference1">Select your course category</label>
-      </div>
-
-    <div class="dropdown">
-      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-        Select Category
-        <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">For teacher</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">For student</a></li>
-      </ul>
-    </div>
-
-      <div>
-        <label for="exampleInputPreference2">Select your course subcategory</label>
-      </div>
-
-    <div class="dropdown">
-      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
-        Select Subcategory
-        <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">For teacher</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">For student</a></li>
-      </ul>
-    </div>
-
+<br>
       <div class="form-group">
-        <label for="exampleInputDescription1">Course Description*</label>
-		<li>Your Current Course Description: {{courseDescription}}</li>
-        <textarea type="text" class="form-control" rows="5" id="exampleInputDescriptions" placeholder="Briefly describe your course." name="courseDescription" value="{{courseDescription}}"></textarea>
+        <label for="exampleInputDescription1">Brief Course Description*</label>
+		<li>Your Current Course Description: <br><strong id="currentCourseDescription">{{courseDescription}}</strong></li>
+        <textarea type="text" class="form-control" rows="5" id="courseDescription" placeholder="Briefly describe your course." name="courseDescription">{{courseDescription}}</textarea>
+		<button  class="btn btn-default" type="button" id="editDescription">Edit Course Description</button>
       </div>
-
+<br>
       <div class="form-group">
-        <label for="exampleInputDescription2">Course Guideline</label>
-        <textarea type="email" class="form-control" rows="5" id="exampleInputDescription2" placeholder="Guide for your students to get started. This will be shown after they enroll in this course."></textarea>
+        <label for="exampleInputDescription2">Course Summary</label>
+		<li>Your Current Course Description: <br><strong id="currentCourseSummary">{{summary}}</strong></li>
+        <textarea type="email" class="form-control" rows="5" id="courseSummary" placeholder="Guide for your students to get started. This will be shown after they enroll in this course.">{{summary}}</textarea>
+		<button  class="btn btn-default" type="button" id="editSummary">Edit Course Summary</button>
       </div>
-
+<br>
       <div class="form-group">
         <label for="exampleInputLessonPicture1">Course Picture*</label>
 		<li>Your Current Course Picture:</li>
-		<img src="{{coursePicture}}" height="300" width="300">
-        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Link to Image" name="coursePicture" value="{{coursePicture}}">
+		<img src="{{coursePicture}}" height="300" width="300" id="currentCoursePicture">
+        <input type="text" class="form-control" id="coursePicture" placeholder="Enter Link to Image" name="coursePicture" value="{{coursePicture}}">
+		<br><button  class="btn btn-default" type="button" id="editPicture">Edit Course Picture</button>
       </div>
-
+<br>
       <div class="form-group">
         <label for="exampleInputLinkForMaterials">Link to Course Lectures*</label>
-		<li>Your Current Course Link:</li>
-		<a href="{{lectureURL}}">{{lectureURL}}</a>
-        <input type="text" class="form-control" id="exampleInputLinkForMaterials" placeholder="Copy and paste your link for your course materials." name="lectureURL" value="{{lectureURL}}">
+		<li>Your Current Course Lectures Link:</li>
+		<a href="{{lectureURL}}" id="currentCourseLecture">{{lectureURL}}</a>
+        <input type="text" class="form-control" id="courseLecture" placeholder="Copy and paste your link for your course materials." name="lectureURL" value="{{lectureURL}}">
+		<br><button  class="btn btn-default" type="button" id="editLecture">Edit Course Lecture Link</button>
       </div>
 
-      <div class="form-group">
-        <label for="exampleInputLessonPicture1">Price</label>
-        <input type="price" class="form-control" id="exampleInputEmail1" placeholder="Enter the price for your course.">
-      </div>
-
-    <div class="checkbox" class="span7 text-center">
+    <br><div class="checkbox" class="span7 text-center">
         <label>
           <input type="checkbox"> I agree to the <a href="term_of_use">term of use</a>.
         </label>
@@ -121,5 +93,113 @@
 {{/each}}          
 </div>
 
+<script>
+
+var titleShow = 0;
+var descriptionShow = 0;
+var summaryShow = 0;
+var pictureShow = 0;
+var lectureShow = 0;
+
+$("#courseName").hide();
+$("#courseDescription").hide();
+$("#courseSummary").hide();
+$("#coursePicture").hide();
+$("#courseLecture").hide();
+
+	$(document).ready(function(){
+		$("#editCourseTitle").click(function(){
+			$("#courseName").toggle();
+			if(titleShow ==0)
+			{
+				titleShow = 1;
+				document.getElementById("editCourseTitle").innerHTML="Save Course Title";
+			}
+			else if(titleShow==1)
+			{
+				titleShow = 0;
+				document.getElementById("editCourseTitle").innerHTML="Edit Course Title";
+				document.getElementById("currentCourseTitle").innerHTML = document.getElementById("courseName").value;
+			}
+			});
+		});	
+		
+	$(document).ready(function(){
+		$("#editDescription").click(function(){
+			$("#courseDescription").toggle();
+			if(descriptionShow ==0)
+			{
+				descriptionShow = 1;
+				document.getElementById("editDescription").innerHTML="Save Course Description";
+			}
+			else if(descriptionShow==1)
+			{
+				descriptionShow = 0;
+				document.getElementById("editDescription").innerHTML="Edit Course Description";
+				document.getElementById("currentCourseDescription").innerHTML = document.getElementById("courseDescription").value;
+			}
+			});
+		});	
+		
+	$(document).ready(function(){
+		$("#editSummary").click(function(){
+			$("#courseSummary").toggle();
+			if(summaryShow ==0)
+			{
+				summaryShow = 1;
+				document.getElementById("editSummary").innerHTML="Save Course Summary";
+			}
+			else if(summaryShow==1)
+			{
+				summaryShow = 0;
+				document.getElementById("editSummary").innerHTML="Edit Course Summary";
+				document.getElementById("currentCourseSummary").innerHTML = document.getElementById("courseSummary").value;
+			}
+			});
+		});	
+		
+	$(document).ready(function(){
+		$("#editPicture").click(function(){
+			$("#coursePicture").toggle();
+			if(pictureShow ==0)
+			{
+				pictureShow = 1;
+				document.getElementById("editPicture").innerHTML="Save Course Picture";
+			}
+			else if(pictureShow==1)
+			{
+				pictureShow = 0;
+				document.getElementById("editPicture").innerHTML="Edit Course Picture";
+				document.getElementById("currentCoursePicture").src = document.getElementById("coursePicture").value;
+			}
+			});
+		});		
+
+	$(document).ready(function(){
+		$("#editLecture").click(function(){
+			$("#courseLecture").toggle();
+			if(lectureShow ==0)
+			{
+				lectureShow = 1;
+				document.getElementById("editLecture").innerHTML="Save Course Lecture Link";
+			}
+			else if(lectureShow==1)
+			{
+				summaryShow = 0;
+				document.getElementById("editSummary").innerHTML="Edit Course Lecture Link";
+				document.getElementById("currentCourseLecture").innerHTML = document.getElementById("courseLecture").value;
+			}
+			});
+		});	
+
+		function changeToCurrent()
+		{
+			document.getElementById("courseLecture").value = document.getElementById("currentCourseLecture").innerHTML;
+			document.getElementById("coursePicture").value = document.getElementById("currentCoursePicture").src;
+			document.getElementById("courseSummary").value = document.getElementById("currentCourseSummary").innerHTML;
+			document.getElementById("courseDescription").value = document.getElementById("currentCourseDescription").innerHTML;
+			document.getElementById("courseName").value = document.getElementById("currentCourseTitle").innerHTML;
+		}
+</script>
 </body>
 </html>

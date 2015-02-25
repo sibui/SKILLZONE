@@ -10,7 +10,8 @@ exports.view = function(req, res){
 		"author": req.query.pUser,
 		"description": req.query.courseDescription,
 		"courseImageURL": req.query.coursePicture,
-		"courseLink": req.query.lectureURL
+		"courseLink": req.query.lectureURL,
+		"summary": req.query.courseSummary
 	});
 	
 	newCourse.save(afterSaving);
@@ -28,7 +29,8 @@ exports.view = function(req, res){
 			"courseAuthor": req.query.pUser,
 			"courseDescription": req.query.courseDescription,
 			"coursePicture": req.query.coursePicture,
-			"lectureURL": req.query.lectureURL
+			"lectureURL": req.query.lectureURL,
+			"summary": req.query.courseSummary
 		}
 	]} );
 	}
