@@ -1,9 +1,10 @@
 // Get all of our friend data
-	var data = require('../data.json');
+	//var data = require('../data.json');
+	var models = require('../models');
 exports.view = function(req, res){
 	console.log(req.query.currentCourse);
 
-	console.log(data);
+	//console.log(data);
 	/*var temp = new Object();
 	temp["courseName"] = "added new test course in studentmode";
 	temp["author"] = "author";
@@ -14,7 +15,7 @@ exports.view = function(req, res){
 	temp["lengthOfLectures"] = "4";
 	temp["studentEnrolled"] = "john@doe.com";
 	data["courses"].push(temp);*/
-	var index = -1;
+	/*var index = -1;
 	for(var i=0; i< data.courses.length; i++)
 	{
 		if(data.courses[i].courseName == req.query.currentCourse)
@@ -24,8 +25,11 @@ exports.view = function(req, res){
 		}
 	}
 	console.log(index);
-	console.log(data.courses[index].author);
-	res.render('class_page', {"singleCourse":[
+	console.log(data.courses[index].author);*/
+	models.Project
+		.find({"courseName": req.query.currentCourse})
+		.exec(renderCourses);
+	/*res.render('class_page', {"singleCourse":[
 		{
 			"courseName": data.courses[index].courseName,
 			"author": data.courses[index].author,
@@ -33,5 +37,8 @@ exports.view = function(req, res){
 			"courseImageURL": data.courses[index].courseImageURL,
 			"courseLink": data.courses[index].courseLink
 		}
-	]});
+	]});*/
+	function renderCourses(err, course){
+	res.render('class_page', {'singleCourse': course});	
+	}
 };

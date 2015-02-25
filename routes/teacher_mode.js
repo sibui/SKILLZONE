@@ -1,9 +1,9 @@
 // Get all of our friend data
 
-var data1 = require('../data.json');
-
+//var data1 = require('../data.json');
+var models = require('../models');
 exports.view = function(req, res){
-	var x = data1.courses.length;
+	/*var x = data1.courses.length;
 	var data = JSON.parse(JSON.stringify(data1));
 
 	for(var i=x-1; i>-1; i--)
@@ -19,6 +19,17 @@ exports.view = function(req, res){
 		else{
 			console.log("DID NOT DELETE AT "+ i);
 		}
+	}*/
+	
+	console.log(req.query.pUser);
+	models.Project
+		.find({"author": req.query.pUser})
+		.exec(renderCourses);
+		
+	function renderCourses(err, course)
+	{	
+		console.log(course);
+		res.render('teacher_mode', {'courses': course});
 	}
-	res.render('teacher_mode',data);
+	//res.render('teacher_mode',data);
 };

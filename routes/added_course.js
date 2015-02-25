@@ -1,17 +1,28 @@
 // Get all of our friend data
 
-var data = require('../data.json');
+//var data = require('../data.json');
+var models = require('../models');
+
 exports.view = function(req, res){
 	console.log("THE LINK IS: " +req.query.coursePicture+"\n");
-	data["courses"].push(
+	var newCourse = new models.Project({
+		"courseName": req.query.courseName,
+		"author": req.query.pUser,
+		"description": req.query.courseDescription,
+		"courseImageURL": req.query.coursePicture,
+		"courseLink": req.query.lectureURL
+	});
+	
+	newCourse.save(afterSaving);
+	
+	function afterSaving(err)
+	{
+		if(err)
 		{
-			"courseName": req.query.courseName,
-			"author": req.query.pUser,
-			"description": req.query.courseDescription,
-			"courseImageURL": req.query.coursePicture,
-			"courseLink": req.query.lectureURL
-		});
-	res.render('added_course', {"courseDetails":[
+			console.log(err);
+			res.send(500);
+		}
+		res.render('added_course', {"courseDetails":[
 		{
 			"courseName": req.query.courseName,
 			"courseAuthor": req.query.pUser,
@@ -20,4 +31,7 @@ exports.view = function(req, res){
 			"lectureURL": req.query.lectureURL
 		}
 	]} );
+	}
+
+	
 };
