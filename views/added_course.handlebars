@@ -42,9 +42,28 @@
       	<p>{{courseName}} has been Added!</p>
     	</header>
     	<a href="class_page?currentCourse={{courseName}}"<button  class="btn btn-default" role="button"> View Your Recently Added Class</button></a>
-    	<a href="teacher_mode"><button  class="btn btn-default" role="button"> Return to Home</button></a>
+    	<button  class="btn btn-default" role="button" onclick="returnHome()"> Return to Home</button>
   	</div>
   {{/each}}
 
+<script>
+function returnHome()
+{
+	var user = getCookie("username");
+	window.location="logged_in?pUser="+encodeURIComponent(user);
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+    }
+    return "";
+}
+
+</script>
 </body>
 </html>
