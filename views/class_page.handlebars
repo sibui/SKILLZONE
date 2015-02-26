@@ -34,26 +34,81 @@
         </div>
       </div>
     </nav>
-<body>
+<body onload="checkUser()">
 {{#each singleCourse}}
 	<div class="courses">
       <h1>{{courseName}}</h1>
 	  <img src="{{courseImageURL}}" height="300" width="300">
+	  <br><button name="{{author}}"  class="btn btn-default" role="button" onclick="convertLink()" id="profileLink")>Click here to view this teacher's profile!</button>
 	  <p>By: {{author}}</p>
       <p>Description:{{description}}</p>
+	  <p>Summary: {{summary}}</p>
 	  <p>Lecture Links: <a href="{{courseLink}}">{{courseLink}}</a>
-    </div>
+    </div> 
 		  <div class="form-group">
 		    <input type="hidden" class="form-control" id="courseEnroll" placeholder="Type your password" name="courseName" value="{{courseName}}">
 		  </div>
 		  <div class="form-group">
 		    <input type="hidden" class="form-control" id="user" placeholder="Type your password" name="pUser" value="">
 		  </div>
-
-		<button  class="btn btn-default" role="button" onclick="enrolledInClass()")>Enroll in Class</button>
+		<p hidden id="author">{{author}}</p>
+		<p hidden id="student">{{studentEnrolled}}</p>
+		<button  class="btn btn-default" role="button" onclick="enrolledInClass()" id="enrollButton")>Enroll in Class</button>
+		<button  class="btn btn-default" role="button" onclick="unenrollInClass()" id="unenrollButton")>Unenroll in Class</button>
+		<button  class="btn btn-default" role="button" onclick="redirectLogin()" id="loginButton")>Please Login before Enrolling</button>
+		<button  class="btn btn-danger" role="button" onclick="deleteClass()") id="deleteButton">Delete Class</button>
 {{/each}}
 
 <script>
+$("#enrollButton").hide();
+$("#deleteButton").hide();
+$("#unenrollButton").hide();
+$("#loginButton").hide();
+
+function convertLink()
+{
+	var user = document.getElementById("profileLink").name;
+	window.location="/profile?pUser="+encodeURIComponent(user);
+}
+
+function unenrollInClass()
+{
+	var user = getCookie("username");
+	var cN = document.getElementById("courseEnroll").value;
+	window.location="unenroll_in_class?pUser="+user+"&courseName="+cN;
+}
+function redirectLogin()
+{
+	window.location="sign_in";
+}
+
+function checkUser()
+{
+	var user = getCookie("username");
+	if(user == "")
+	{
+		$("#loginButton").toggle();
+	}
+	else if( user == document.getElementById("author").innerHTML)
+	{
+		$("#deleteButton").toggle();
+	}
+	else if(user == document.getElementById("student").innerHTML)
+	{
+		$("#unenrollButton").toggle();
+	}
+	else
+	{
+		$("#enrollButton").toggle();
+	}
+}
+
+function deleteClass()
+{
+	var user = getCookie("username");
+	var cN = document.getElementById("courseEnroll").value;
+	window.location="delete_class?pUser="+user+"&courseName="+cN;
+}
 
 function enrolledInClass()
 {

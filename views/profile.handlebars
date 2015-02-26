@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  
+  
   <style>
    .thumbnails {
      border: 0 none;
@@ -32,7 +34,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" >My Profile</a>
+          <a class="navbar-brand" id="profileName">My Profile</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -44,34 +46,90 @@
         </div>
       </div>
     </nav>
-<body>
+<body onload="whoseProfile()">
 
+{{#each singleUser}}
 <div class="container">
 
 
           <div class="thumbnail">
-            <img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xap1/t31.0-8/10368332_612250152206024_4338549022138809960_o.jpg" height="150px" width="150px" alt="profile-pic">
+            <img src="{{image}}" height="150px" width="150px" alt="profile-pic">
+			<button  class="btn btn-info btn-md btn-block" role="button" onclick="editImage()" id="editImage">Edit Image</button>
+			<form id="update_summary" role="form" method="get" action="/update_image">
+			<input type="hidden" class="form-control" id="exampleInputEmail1" placeholder="" name="pUser" value="{{email}}">
+			<input type="text" class="form-control" id="userPicture" name="userImage" value="{{image}}">
+			<button  class="btn btn-info btn-md btn-block" id="editImageButton" "role="button">Save Image</button>
+		</form>
           </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-12">
-          <input type="file" capture="camera" accept="image/*" id="cameraInput"/>
-        </div>
-
-
-
-    <div class="list-group">
-      <a class="list-group-item">First Lastname</a>
-      <a class="list-group-item">E-mail: email@somewhere.com</a>
-      <a class="list-group-item">Skill: basketball, swimming.</a>
-      <a class="list-group-item">Interests: cooking, IT Development.</a>
-    </div>
-
-
-        <a href="#"><button  class="btn btn-info btn-md btn-block" role="button">Update Profile</button></a>
-        <a href="log_out"><button  class="btn btn-default btn-md btn-block" role="button">Logout</button></a>
-
-</div>
 		
+		
+       <!-- <div class="col-xs-12 col-sm-12 col-md-12">
+          <input type="file" capture="camera" accept="image/*" id="cameraInput"/>
+        </div>-->
+
+
+
+    <ul class="list-group">
+      <li class="list-group-item"><strong>First:</strong> <hi id="firstName">{{first}}</hi></li>
+	  <li class="list-group-item"><strong>Last: </strong><hi id="lastName">{{last}}</hi></li>
+      <li class="list-group-item"><strong>E-mail: </strong><hi id="emailCheck">{{email}}</hi></li>
+      <li class="list-group-item"><strong>Summary: </strong><br><hi id="currentSummary">{{summary}}</hi></li>
+	  
+    </ul>
+	<form id="update_summary" role="form" method="get" action="/update_summary">
+		<input type="hidden" class="form-control" id="exampleInputEmail1" placeholder="" name="pUser" value="{{email}}">
+		<textarea type="text" class="form-control" rows="3" id="userSummary" name="userSummary">{{summary}}</textarea><br>
+		<button  class="btn btn-info btn-md btn-block" id="saveButton" "role="button">Save Summary</button>
+	</form>
+	
+        
+        <!--<a href="log_out"><button  class="btn btn-default btn-md btn-block" role="button">Logout</button></a>-->
+		<button  class="btn btn-info btn-md btn-block" role="button" onclick="editSummary()" id="editButton">Edit Summary</button>
+</div>
+
+{{/each}}
+
+
+<script>
+$("#saveButton").hide();
+$("#userSummary").hide();
+$("#userPicture").hide();
+$("#editImageButton").hide();
+
+
+function editImage()
+{
+	$("#userPicture").toggle();
+	$("#editImage").toggle();
+	$("#editImageButton").toggle();
+}
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+    }
+    return "";
+}
+
+function whoseProfile()
+{
+	document.getElementById("profileName").innerHTML = document.getElementById("firstName").innerHTML+" "+document.getElementById("lastName").innerHTML+"'s Profile";
+	if(document.getElementById("emailCheck").innerHTML != getCookie("username"))
+	{
+			$("#editImage").hide();
+			$("#editButton").hide();
+	}
+}
+function editSummary()
+{
+	$("#saveButton").toggle();
+	$("#userSummary").toggle();
+	$("#editButton").toggle();
+}
+</script>		
 
 
 </body>

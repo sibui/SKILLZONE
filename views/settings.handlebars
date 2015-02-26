@@ -49,12 +49,9 @@
 <body>
   <div class="container">
 
-    <div class="thumbnail">
-      <img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xap1/t31.0-8/10368332_612250152206024_4338549022138809960_o.jpg" height="150px" width="150px" alt="profile-pic">
-    </div>
 
     <div class="list-group">
-      <a class="list-group-item" href="profile">My Profile</a>
+      <a class="list-group-item" href="profile" id="profileButton"  onclick="goToProfile()">My Profile</a>
       <a class="list-group-item" href="help">FAQ</a>
       <a class="list-group-item" href="logged_in">Preference</a>
       <a class="list-group-item" href="term_of_use">Term of use</a>
@@ -65,5 +62,23 @@
     </div>
   </div>
 
+<script>
+function goToProfile()
+{
+	var name = getCookie("username");
+	document.getElementById("profileButton").href = "/profile?pUser="+name;
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+    }
+    return "";
+}
+</script>
 </body>
 </html>
