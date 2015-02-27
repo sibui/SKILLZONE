@@ -23,7 +23,6 @@ h4 {
 
 
 body { 
-    padding-top: 60px;
     padding-bottom: 20px;
      }
 
@@ -66,17 +65,3 @@ img .desaturate {
 } /*Maybe it is because of the pictures are not local?? This is not working.*/
 
 
-
-
-@media (max-width: 768px) {
-
-.navbar-brand {
-    position: absolute;
-    width: 50%;
-    left: 0;
-    text-align: right;
-    margin-left: 25%;
-}
-
-
-}
