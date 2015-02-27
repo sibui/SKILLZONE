@@ -1,6 +1,6 @@
 body {
 
-  background-color: #336699;
+  /*background-color: #336699;*/
 }
 
 h1 {
@@ -13,7 +13,7 @@ color: #000;
 h2 {
 
 font-family: 'Lato', sans-serif;
-font-weight: 300;
+font-weight: 100;
 color: #000;
 }
 
@@ -68,7 +68,7 @@ body {
     text-align:center;
     display: inline-block;
     float: none;
-    background: RGBA(0,0,0,0.3);    
+    /*background: RGBA(0,0,0,0.3);    */
 }
 
 .thumbnails > li {
