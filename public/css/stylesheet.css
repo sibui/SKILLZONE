@@ -1,5 +1,12 @@
-.course {
-    
+
+h4 {
+
+font-family: font-family: 'Bitter', serif;
+}
+
+h5 {
+
+font-family: font-family: 'Bitter', serif;
 }
 
 .course h5 {
@@ -72,11 +79,10 @@ img .desaturate {
 
 .navbar-brand {
     position: absolute;
-    width: 50%;
+    width: 60%;
     left: 0;
-    text-align: right;
-    margin-left: 25%;
-    margin-right: 25%;
+    text-align: center;
+    margin-left: 20%;
 }
 
 

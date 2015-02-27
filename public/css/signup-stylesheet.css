@@ -5,17 +5,14 @@ body {
 
 h1 {
 
-font-family: helvetica;
+font-family: font-family: 'Bitter', serif;
 }
 
 h2 {
 
-font-family: helvetica;
+font-family: font-family: 'Bitter', serif;
 }
 
-.course {
-    
-}
 
 .course h5 {
     text-align: center;
