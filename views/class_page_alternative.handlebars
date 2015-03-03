@@ -41,16 +41,41 @@
       </div>
     </nav>
 <body onload="checkUser()">
+	<div class="container">
 {{#each singleCourse}}
-	<div class="courses">
-      <h1>{{courseName}}</h1>
-	  <img src="{{courseImageURL}}" height="300" width="300">
-	  <br><button name="{{author}}"  class="btn btn-default" role="button" onclick="convertLink()" id="profileLink")>Click here to view this teacher's profile!</button>
-	  <p>By: {{author}}</p>
-      <p>Description:{{description}}</p>
-	  <p>Summary: {{summary}}</p>
-	  <p>Lecture Links: <a href="{{courseLink}}">{{courseLink}}</a>
-    </div> 
+
+		<div class="courses">
+
+		    <div class="jumbotron">
+		      <div class="container">
+		        <h1>{{courseName}}</h1>
+		        <p><!--Going to put stars in this.--></p>
+		      </div>
+		    </div> 
+			<!--<img src="{{courseImageURL}}">-->
+		  <br>
+			<div class="row">
+				<div class="col-xs-5">
+
+				  <button name="{{author}}"  class="btn btn-default btn-md btn-block" role="button" onclick="convertLink()" id="profileLink")>See Profile</button>
+			  	</div>
+
+				<div class="col-xs-7">
+				  <h4>{{first}}&nbsp;{{last}}</h4>
+				  <p></p>
+		   		</div>
+	   		</div> 
+
+	   		<div class="row">
+	   			<div class="col-xs-12">
+			      <h5>Course Description</h5>
+			      <p>{{description}}</p>
+				  <h5>Summary</h5>
+				  <p>{{summary}}</p>
+				  <!--<p>Lecture Links: <a href="{{courseLink}}">{{courseLink}}</a></p> shown only after enrolled.-->
+				</div>
+	   		</div>
+
 		  <div class="form-group">
 		    <input type="hidden" class="form-control" id="courseEnroll" placeholder="Type your password" name="courseName" value="{{courseName}}">
 		  </div>
@@ -59,12 +84,13 @@
 		  </div>
 		<p hidden id="author">{{author}}</p>
 		<p hidden id="student">{{studentEnrolled}}</p>
-		<button  class="btn btn-default" role="button" onclick="enrolledInClass()" id="enrollButton")>Enroll in Class</button>
-		<button  class="btn btn-default" role="button" onclick="unenrollInClass()" id="unenrollButton")>Unenroll in Class</button>
-		<button  class="btn btn-default" role="button" onclick="redirectLogin()" id="loginButton")>Please Login before Enrolling</button>
-		<button  class="btn btn-danger" role="button" onclick="deleteClass()") id="deleteButton">Delete Class</button>
+		
+		<button  class="btn btn-default btn-md btn-block" role="button" onclick="enrolledInClass()" id="enrollButton")>Enroll in Class</button>
+		<button  class="btn btn-default btn-md btn-block" role="button" onclick="unenrollInClass()" id="unenrollButton")>Unenroll in Class</button>
+		<button  class="btn btn-default btn-md btn-block" role="button" onclick="redirectLogin()" id="loginButton")>Please Login before Enrolling</button>
+		<button  class="btn btn-danger btn-md btn-block" role="button" onclick="deleteClass()") id="deleteButton">Delete Class</button>
 {{/each}}
-
+	</div>
 <script>
 $("#enrollButton").hide();
 $("#deleteButton").hide();
