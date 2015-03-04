@@ -24,7 +24,9 @@
 			"lengthOfLectures": "4",
 			"studentEnrolled": "john@doe.com",
 			"summary": "pro nba basketball description",
-			"price": "$200"
+			"price": "$200",
+			"first": "Khorshid",
+			"last": "Zimmermann"
 		},
 		{
 			"courseName": "Beginner Piano Lessons Pop Music",
@@ -36,7 +38,9 @@
 			"lengthOfLectures": "4",
 			"studentEnrolled": "Bhima Santiago@example.com",
 			"summary": "beginner piano lessons description",
-			"price": "$90"
+			"price": "$90",
+			"first": "Bridget",
+			"last": "Jones"
 		},
 		{
 			"courseName": "Still Life Studies for Novices",
@@ -48,7 +52,9 @@
 			"lengthOfLectures": "4",
 			"studentEnrolled": "TienNapolielloexamplestudent@example.com",
 			"summary": "still life studies description",
-			"price": "$50"
+			"price": "$50",
+			"first": "Jess",
+			"last": "Dam"
 		},
 		{
 			"courseName": "Lets Make Trigonometry Fun",
@@ -60,7 +66,9 @@
 			"lengthOfLectures": "4",
 			"studentEnrolled": "FrancisNorris@gmail.com",
 			"summary": "lets make trig fun description",
-			"price": "$40 "
+			"price": "$40",
+			"first": "Oluwaseun",
+			"last": "Vinci"
 		},
 		{
 			"courseName": "Intro to Making Delicious Java…Programs",
@@ -72,7 +80,10 @@
 			"lengthOfLectures": "4",
 			"studentEnrolled": "GalenosFiore@gmail.com",
 			"summary": "into to making delicious java programs description",
-			"price": "$100"
+			"price": "$100",
+			"first": "John C.",
+			"last": "Doe"
+
 		},
 		
 		{
@@ -85,7 +96,9 @@
 			"lengthOfLectures": "4",
 			"studentEnrolled": "IahelUghi@gmail.com",
 			"summary": "gardening for arid landscapes description",
-			"price": "$50"
+			"price": "$50",
+			"first": "John C.",
+			"last": "Doe"
 		},
 		{
 			"courseName": "Game Characters for MMO Noobs",
@@ -97,7 +110,9 @@
 			"lengthOfLectures": "4",
 			"studentEnrolled": "NilamLindholm@hotmail.com",
 			"summary": " game characters for mmo noobs description",
-			"price": "$120"
+			"price": "$120",
+			"first": "Shu",
+			"last": "Hobson"
 		},
 		{
 			"courseName": "Relax and De-stress",
@@ -109,7 +124,9 @@
 			"lengthOfLectures": "4",
 			"studentEnrolled": "SìneNelson@yahoo.com",
 			"summary": "relax and de-stress description ",
-			"price": "$30"
+			"price": "$30",
+			"first": "Nuka",
+			"last": "Noschese"
 		},
 		{
 			"courseName": "Setting up Servers",
@@ -121,7 +138,9 @@
 			"lengthOfLectures": "4",
 			"studentEnrolled": "HelleGorka@yahoo.com",
 			"summary": " setting up servers description",
-			"price": "$200"
+			"price": "$200",
+			"first": "Neilina",
+			"last": "Hustovi"
 		}
 	],
 	"users":[
