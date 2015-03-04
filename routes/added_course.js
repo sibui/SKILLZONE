@@ -11,7 +11,9 @@ exports.view = function(req, res){
 		"description": req.query.courseDescription,
 		"courseImageURL": req.query.coursePicture,
 		"courseLink": req.query.lectureURL,
-		"summary": req.query.courseSummary
+		"summary": req.query.courseSummary,
+		"first": req.query.firstName,
+		"last": req.query.lastName
 	});
 	
 	newCourse.save(afterSaving);
@@ -30,7 +32,9 @@ exports.view = function(req, res){
 			"courseDescription": req.query.courseDescription,
 			"coursePicture": req.query.coursePicture,
 			"lectureURL": req.query.lectureURL,
-			"summary": req.query.courseSummary
+			"summary": req.query.courseSummary,
+			"first": req.query.firstName,
+			"last": req.query.lastName
 		}
 	]} );
 	}
