@@ -51,28 +51,30 @@
         <input type="hidden" class="form-control" id="lastName" placeholder="" name="lastName" value="{{last}}">
 	  {{/each}}
       <div class="form-group">
-        <label for="exampleInputEmail1" >Course Title*</label>
+        <center><label for="exampleInputEmail1" >Course Title*</center></label>
         <input type="text" class="form-control" id="exampleInputEmail1" placeholder="" name="courseName" required>
       </div>
 
       <div class="form-group">
-        <label for="exampleInputDescription1">Course Description*</label>
+        <center><label for="exampleInputDescription1">Course Description*</center></label>
         <textarea type="text" class="form-control" rows="5" id="exampleInputDescriptions" placeholder="Briefly describe your course." name="courseDescription"></textarea>
       </div>
 
       <div class="form-group">
-        <label for="exampleInputDescription2">Course Summary*</label>
+        <center><label for="exampleInputDescription2">Course Summary*</center></label>
         <textarea type="email" class="form-control" rows="5" id="exampleInputDescription2" placeholder="Explain more in depth about your course" name="courseSummary"></textarea>
       </div>
 
       <div class="form-group">
-        <label for="exampleInputLessonPicture1">Add the link to your Course Picture*</label><br>
-		<small>For example: https://www.google.com/images/srpr/logo11w.png</small>
-        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Link to Image Here" name="coursePicture">
+        <center><label for="exampleInputLessonPicture1">Add the link to your Course Picture <br>or<br>Click on one of our default pictures below*</center></label><br>
+		<center><img src="img/default-thumbnail.png" height="82" width="151" id="defaultPicture" onclick="setImage()"></img>
+		<img src="img/sports-icon.png" height="82" width="151" id="sportPicture" onclick="setImage1()"></img><br>
+		<small>For example: https://www.google.com/images/srpr/logo11w.png</small></center>
+        <input type="text" class="form-control" id="textLink" placeholder="Enter Link to Image Here" name="coursePicture">
       </div>
 
       <div class="form-group">
-        <label for="exampleInputLinkForMaterials">Link to Course Lectures Link*</label>
+        <center><label for="exampleInputLinkForMaterials">Link to Course Lectures Link*</center></label>
         <input type="text" class="form-control" id="exampleInputLinkForMaterials" placeholder="Copy and paste your link for your course materials." name="lectureURL">
       </div>
 
@@ -88,7 +90,17 @@
           
 </div>
 	
+<script>
+function setImage()
+{
+	document.getElementById("textLink").value = document.getElementById("defaultPicture").src;
+}
 
+function setImage1()
+{
+	document.getElementById("textLink").value = document.getElementById("sportPicture").src;
+}
+</script>
 
 </body>
 </html>
