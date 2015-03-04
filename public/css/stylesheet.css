@@ -8,7 +8,13 @@ font-weight: 300;
 h5 {
     
 font-family: 'Open Sans', sans-serif;
-font-weight: 300;
+font-weight: 400;
+}
+
+p {
+    
+font-family: helvetica;
+
 }
 
 .course h5 {
