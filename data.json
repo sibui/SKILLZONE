@@ -10,7 +10,9 @@
 			"lengthOfLectures": "4",
 			"studentEnrolled": "john@doe.com",
 			"summary": "intro to hci description",
-            "price": "$3000"
+            "price": "$3000",
+			"first": "Scott",
+			"last": "Klemmer"
 		},
 		{
 			"courseName": "Pro NBA Basketball Secrets",

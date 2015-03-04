@@ -12,7 +12,9 @@ var ProjectSchema = new Mongoose.Schema({
 		"lengthOfLectures": Number,
 		"studentEnrolled": String,
 		"summary": String,
-		"image": String
+		"image": String,
+		"first": String,
+		"last": String
 });
 
 var UserSchema = new Mongoose.Schema({
