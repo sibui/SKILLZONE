@@ -1,4 +1,4 @@
-<!doctype html>
+	<!doctype html>
 <html lang="en">
 <head>
   <title>SkillZone - Confirm Course Details</title> 
@@ -59,7 +59,7 @@
 	  
       <div class="form-group">
         <label for="exampleInputEmail1" >Course Title*</label>
-		<li>Your Current Course Title: <strong id="currentCourseTitle">{{courseName}}</strong></li>
+		<li><strong id="currentCourseTitle">{{courseName}}</strong></li>
         <input  type="text" class="form-control" id="courseName" placeholder="" name="courseName" value="{{courseName}}" >
 		<button  class="btn btn-default" type="button" id="editCourseTitle">Edit Course Title</button>
       </div>
@@ -67,40 +67,35 @@
 <br>
       <div class="form-group">
         <label for="exampleInputDescription1">Brief Course Description*</label>
-		<li>Your Current Course Description: <br><strong id="currentCourseDescription">{{courseDescription}}</strong></li>
+		<li><strong id="currentCourseDescription">{{courseDescription}}</strong></li>
         <textarea type="text" class="form-control" rows="5" id="courseDescription" placeholder="Briefly describe your course." name="courseDescription">{{courseDescription}}</textarea>
-		<button  class="btn btn-default" type="button" id="editDescription">Edit Course Description</button>
+		<button  class="btn btn-default" type="button" id="editDescription">Edit</button>
       </div>
 <br>
       <div class="form-group">
         <label for="exampleInputDescription2">Course Summary</label>
-		<li>Your Current Course Description: <br><strong id="currentCourseSummary">{{summary}}</strong></li>
+		<li><br><strong id="currentCourseSummary">{{summary}}</strong></li>
         <textarea type="email" class="form-control" rows="5" id="courseSummary" placeholder="Guide for your students to get started. This will be shown after they enroll in this course.">{{summary}}</textarea>
-		<button  class="btn btn-default" type="button" id="editSummary">Edit Course Summary</button>
+		<button  class="btn btn-default" type="button" id="editSummary">Edit</button>
       </div>
 <br>
       <div class="form-group">
         <label for="exampleInputLessonPicture1">Course Picture*</label>
-		<li>Your Current Course Picture:</li>
-		<img src="{{coursePicture}}" height="300" width="300" id="currentCoursePicture">
+		<li></li>
+		<img src="{{coursePicture}}" height="82" width="151" id="currentCoursePicture">
         <input type="text" class="form-control" id="coursePicture" placeholder="Enter Link to Image" name="coursePicture" value="{{coursePicture}}">
-		<br><button  class="btn btn-default" type="button" id="editPicture">Edit Course Picture</button>
+		<br><button  class="btn btn-default" type="button" id="editPicture">Edit</button>
       </div>
 <br>
       <div class="form-group">
         <label for="exampleInputLinkForMaterials">Link to Course Lectures*</label>
-		<li>Your Current Course Lectures Link:</li>
+		<li></li>
 		<a href="{{lectureURL}}" id="currentCourseLecture">{{lectureURL}}</a>
         <input type="text" class="form-control" id="courseLecture" placeholder="Copy and paste your link for your course materials." name="lectureURL" value="{{lectureURL}}">
-		<br><button  class="btn btn-default" type="button" id="editLecture">Edit Course Lecture Link</button>
+		<br><button  class="btn btn-default" type="button" id="editLecture">Edit</button>
       </div>
 
-    <br><div class="checkbox" class="span7 text-center">
-        <label>
-          <input type="checkbox"> I agree to the <a href="term_of_use">term of use</a>.
-        </label>
-     </div> 
-	 <button  class="btn btn-default btn-block" role="button"> Add Course</button>
+	 <button  class="btn btn-primary btn-block" role="button"> Submit Course</button>
 </form>
 {{/each}}          
 </div>
