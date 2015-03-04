@@ -109,7 +109,7 @@ img .desaturate {
   background-image: -webkit-linear-gradient(top, #ffffff, #ffffff);
   background-image: -o-linear-gradient(top, #ffffff, #ffffff);
   background-image: linear-gradient(#ffffff, #ffffff);
-  border-color: #ffffff #ffffff hsl(0, 0%, 60%);
+  border-color: #333333 #333333 hsl(0, 0%, 60%);
   color: #333 !important;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.00);
   -webkit-font-smoothing: antialiased;
