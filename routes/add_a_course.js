@@ -10,9 +10,14 @@ exports.view = function(req, res){
 	function renderUser(err, user){
 		//console.log(user);
 		console.log("THE FIRST NAME IS " + user[0].first+" " + user[0].last);	
-	res.render('add_a_course', {"courses":[{"author": req.query.pUser},
-		{"first": user[0].first},{"last": user[0].last}
-	]});
+	res.render('add_a_course', {
+		"courses":[
+			{	
+				"author": req.query.pUser,
+				"first": user[0].first,
+				"last": user[0].last
+			}
+				]});
 	}
 	
 };

@@ -28,6 +28,7 @@ exports.view = function(req, res){
 	console.log(data.courses[index].author);*/
 	models.Project
 		.find({"courseName": req.query.currentCourse})
+		.limit(1)
 		.exec(renderCourses);
 	/*res.render('class_page', {"singleCourse":[
 		{
@@ -39,6 +40,7 @@ exports.view = function(req, res){
 		}
 	]});*/
 	function renderCourses(err, course){
-	res.render('class_page', {'singleCourse': course});	
+	console.log(course);
+	res.render('class_page_alternative', {'singleCourse': course});	
 	}
 };
