@@ -81,7 +81,7 @@ img .desaturate {
   filter: grayscale(1);
 } /*Maybe it is because of the pictures are not local?? This is not working.*/
 
-.btn-custom {
+.btn-custom1 {
   background-color: hsl(201, 100%, 36%) !important;
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0077b7", endColorstr="#0077b7");

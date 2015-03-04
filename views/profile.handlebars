@@ -60,11 +60,11 @@
 
           <div class="thumbnail">
             <img src="{{image}}" height="150px" width="150px" alt="profile-pic">
-			<button  class="btn btn-custom btn-md btn-block" role="button" onclick="editImage()" id="editImage">Edit Image</button>
+			<button  class="btn btn-custom1 btn-md btn-block" role="button" onclick="editImage()" id="editImage">Edit Image</button>
 			<form id="update_summary" role="form" method="get" action="/update_image">
 			<input type="hidden" class="form-control" id="exampleInputEmail1" placeholder="" name="pUser" value="{{email}}">
 			<input type="text" class="form-control" id="userPicture" name="userImage" value="{{image}}">
-			<button  class="btn btn-custom btn-md btn-block" id="editImageButton" "role="button">Save Image</button>
+			<button  class="btn btn-custom1 btn-md btn-block" id="editImageButton" "role="button">Save Image</button>
 		</form>
           </div>
 		
@@ -85,12 +85,12 @@
 	<form id="update_summary" role="form" method="get" action="/update_summary">
 		<input type="hidden" class="form-control" id="exampleInputEmail1" placeholder="" name="pUser" value="{{email}}">
 		<textarea type="text" class="form-control" rows="3" id="userSummary" name="userSummary">{{summary}}</textarea><br>
-		<button  class="btn btn-custom btn-md btn-block" id="saveButton" "role="button">Save Summary</button>
+		<button  class="btn btn-custom1 btn-md btn-block" id="saveButton" "role="button">Save Summary</button>
 	</form>
 	
         
         <!--<a href="log_out"><button  class="btn btn-default btn-md btn-block" role="button">Logout</button></a>-->
-		<button  class="btn btn-custom btn-md btn-block" role="button" onclick="editSummary()" id="editButton">Edit Summary</button>
+		<button  class="btn btn-custom1 btn-md btn-block" role="button" onclick="editSummary()" id="editButton">Edit Summary</button>
 </div>
 
 {{/each}}
