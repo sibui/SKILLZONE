@@ -15,7 +15,7 @@ var newUser = new models.User({
 	"email": req.query.email,
 	"first": req.query.first,
 	"last": req.query.last,
-	"image": "broken image",
+	"image": "img/default-profile-pic.png",
 	"summary": "default summary"
 });
 	newUser.save(afterSaving);
