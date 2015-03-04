@@ -81,6 +81,15 @@ img .desaturate {
   filter: grayscale(1);
 } /*Maybe it is because of the pictures are not local?? This is not working.*/
 
+.btn-default:active,
+.btn-default:focus,
+.btn-default.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .btn-custom1 {
   background-color: hsl(201, 100%, 36%) !important;
   background-repeat: repeat-x;
