@@ -17,12 +17,17 @@ font-family: helvetica;
 
 }
 
-.course h5 {
+.courses h1 {
+    text-outline: 2px 2px #4C4C4C;
+
+}
+.courses h5 {
     text-align: center;
 
 }
 
-.course p {
+
+.courses p {
     text-align: center;
 
 }
