@@ -13,7 +13,6 @@ var home = require('./routes/home');
 var add_a_course = require('./routes/add_a_course');
 var added_course = require('./routes/added_course');
 var class_page = require('./routes/class_page');
-var class_page_alternative = require('./routes/class_page_alternative');
 var confirmation = require('./routes/confirmation');
 var courses = require('./routes/courses');
 var enrolled_classes = require('./routes/enrolled_classes');

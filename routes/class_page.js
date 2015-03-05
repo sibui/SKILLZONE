@@ -1,6 +1,6 @@
 // Get all of our friend data
 	//var data = require('../data.json');
-	var models = require('../models');
+var models = require('../models');
 exports.view = function(req, res){
 	console.log(req.query.currentCourse);
 
@@ -40,16 +40,17 @@ exports.view = function(req, res){
 		}
 	]});*/
 	function renderCourses(err, course){
-	console.log(course);
+		console.log(course);
 
-	var random_num = Math.random();
+		var random_num = Math.random();
 
-	if(random_num > 0.5){
-	  res.render('class_page', {'singleCourse': course});
-	}else{
-	  res.render('class_page_alternative', {'singleCourse': course})
-	}
-};
+		if(random_num > 0.5){
+		  res.render('class_page', {'singleCourse': course});
+		}else{
+		  res.render('class_page_alternative', {'singleCourse': course})
+		}
+	};
+}
 
 
      
