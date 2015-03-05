@@ -41,6 +41,16 @@ exports.view = function(req, res){
 	]});*/
 	function renderCourses(err, course){
 	console.log(course);
-	res.render('class_page_alternative', {'singleCourse': course});	
+
+	var random_num = Math.random();
+
+	if(random_num > 0.5){
+	  res.render('class_page', {'singleCourse': course});
+	}else{
+	  res.render('class_page_alternative', {'singleCourse': course})
 	}
 };
+
+
+     
+
