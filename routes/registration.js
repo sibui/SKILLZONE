@@ -16,7 +16,8 @@ var newUser = new models.User({
 	"first": req.query.first,
 	"last": req.query.last,
 	"image": "img/default-profile-pic.png",
-	"summary": "default summary"
+	"summary": "default summary",
+	"defaultMode": req.query.defaultMode
 });
 	newUser.save(afterSaving);
 	

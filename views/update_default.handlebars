@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>SkillZone - Logged In</title> 
-  
+  <title>SkillZone - Welcome back!</title> 
+
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -17,22 +17,22 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/jquery.stayInWebApp.js"></script>
   <script type="text/javascript" src="js/util.js"></script>
-  
+   
 </head>
-<body onload="loadUser()">
+
+<body onload="enrolledInClass()">
 <br><br><br>
 
-<h4> One Moment Please... </h4>	
- 		
+<h4> One Moment Please... </h4>
+
+	
 <script>
 
-function loadUser()
+function enrolledInClass()
 {
+	alert("Default Home successfully updated!");
 	var user = getCookie("username");
-	window.location= "/redirect_default?pUser="+encodeURIComponent(user);
-	//document.getElementById("teacher_mode").href="teacher_mode/?pUser="+encodeURIComponent(getCookie("username"));	
-	//document.getElementById("student_mode").href="student_mode/?pUser="+encodeURIComponent(getCookie("username"));
-	
+	window.location="/profile?pUser="+encodeURIComponent(user);
 }
 function getCookie(cname) {
     var name = cname + "=";
@@ -74,8 +74,7 @@ function getDataUrl(url) {
 }
 return data_url;
 }
-
 </script>
-
 </body>
 </html>
+

@@ -6,6 +6,7 @@ exports.view = function(req, res){
 	//res.render('courses', data);
 		models.Project
 		.find()
+		.sort("courseName")
 		.exec(renderCourses);
 		
 	function renderCourses(err, course){

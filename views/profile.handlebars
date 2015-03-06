@@ -65,7 +65,7 @@
 			<input type="hidden" class="form-control" id="exampleInputEmail1" placeholder="" name="pUser" value="{{email}}">
 			<input type="text" class="form-control" id="userPicture" name="userImage" value="{{image}}">
 			<button  class="btn btn-primary btn-md btn-block" id="editImageButton" "role="button">Save Image</button>
-		</form>
+			</form>
           </div>
 		
 		
@@ -90,7 +90,21 @@
 	
         
         <!--<a href="log_out"><button  class="btn btn-default btn-md btn-block" role="button">Logout</button></a>-->
-		<button  class="btn btn-primary btn-md btn-block" role="button" onclick="editSummary()" id="editButton">Edit Summary</button>
+		<button  class="btn btn-primary btn-md btn-block" role="button" onclick="editSummary()" id="editButton">Edit Summary</button><br><br>
+		
+		
+		<form id="update_default" role="form" method="get" action="/update_default">
+		
+		<li class="list-group-item">
+		<strong>Current Home Page:</strong> {{defaultMode}}
+		</li>
+		<li class="list-group-item">
+		<small id="default">Select one to change your Default Home Page</small><br><br>
+		<input type="hidden" class="form-control" id="exampleInputEmail1" placeholder="" name="pUser" value="{{email}}">
+		<input type="radio" name="mode" id="optionsRadios2" value="Student">Student Mode<br>
+		<input type="radio" name="mode" id="optionsRadios2" value="Teacher">Teacher Mode</li><br>
+		<button  class="btn btn-primary btn-md btn-block" id="saveDefault" "role="button">Set Default Home Page</button>
+		</form>
 </div>
 
 {{/each}}
@@ -101,6 +115,7 @@ $("#saveButton").hide();
 $("#userSummary").hide();
 $("#userPicture").hide();
 $("#editImageButton").hide();
+$("#update_default").hide();
 
 
 function editImage()
@@ -122,11 +137,15 @@ function getCookie(cname) {
 
 function whoseProfile()
 {
-	document.getElementById("profileName").innerHTML = document.getElementById("firstName").innerHTML+" "+document.getElementById("lastName").innerHTML;
+	document.getElementById("profileName").innerHTML = document.getElementById("firstName").innerHTML+" "+document.getElementById("lastName").innerHTML+"'s Profile";
 	if(document.getElementById("emailCheck").innerHTML != getCookie("username"))
 	{
 			$("#editImage").hide();
 			$("#editButton").hide();
+	}
+	else
+	{
+		$("#update_default").toggle();
 	}
 }
 function editSummary()

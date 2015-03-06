@@ -23,7 +23,8 @@ var UserSchema = new Mongoose.Schema({
 		"first": String,
 		"last": String,
 		"image": String,
-		"summary": String
+		"summary": String,
+		"defaultMode": String
 });
 
 exports.Project = Mongoose.model('Project', ProjectSchema);
