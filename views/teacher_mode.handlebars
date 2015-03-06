@@ -48,6 +48,7 @@
 
 	<br><br><br>
     <div class="col-md-12 col-xs-12">
+	<button class="btn btn-success " role="button" onclick="studentMode()" style="float:right;">Go to Student Mode!</button><br><br>
         <button class="btn btn-primary btn-lg btn-block" role="button" onclick="addACourse()">Create a course now!</button>
     </div><br>
 
@@ -89,6 +90,12 @@ function getCookie(cname) {
         if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
     }
     return "";
+}
+
+function studentMode()
+{
+	var user = getCookie("username");
+	window.location="student_mode?pUser="+encodeURIComponent(user);
 }
 </script>
 
