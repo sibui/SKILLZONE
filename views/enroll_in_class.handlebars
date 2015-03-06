@@ -32,7 +32,7 @@ function enrolledInClass()
 {
 	alert("You are successfully enrolled!");
 	var user = getCookie("username");
-	window.location="logged_in?pUser="+encodeURIComponent(user);
+	window.location="student_mode/?pUser="+encodeURIComponent(user);
 }
 function getCookie(cname) {
     var name = cname + "=";

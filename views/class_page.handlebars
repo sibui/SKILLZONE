@@ -78,7 +78,8 @@
 			      <p>{{description}}</p>
 				  <h5>Summary</h5>
 				  <p>{{summary}}</p>
-				  <!--<p>Lecture Links: <a href="{{courseLink}}">{{courseLink}}</a></p> shown only after enrolled.-->
+				  <h5 id="lectureLinksHeader">Lecture Link</h5>
+				  <p id="lectureLinks"><a href="{{courseLink}}">{{courseLink}}</a></p>
 				</div>
 	   		</div>
 
@@ -102,6 +103,8 @@ $("#enrollButton").hide();
 $("#deleteButton").hide();
 $("#unenrollButton").hide();
 $("#loginButton").hide();
+$("#lectureLinks").hide();
+$("#lectureLinksHeader").hide();
 
 function convertLink()
 {
@@ -137,6 +140,8 @@ var courseImage = document.getElementById("jumbo").style.backgroundImage = "url(
 	else if(user == document.getElementById("student").innerHTML)
 	{
 		$("#unenrollButton").toggle();
+		$("#lectureLinks").toggle();
+		$("#lectureLinksHeader").toggle();
 	}
 	else
 	{
