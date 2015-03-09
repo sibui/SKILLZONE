@@ -10,12 +10,13 @@ exports.view = function(req, res){
 		"author": req.query.pUser,
 		"description": req.query.courseDescription,
 		"courseImageURL": req.query.coursePicture,
-		"courseLink": req.query.lectureURL,
+		"lengthOfLectures": req.query.lengthOfLectures,
+		"numberOfLectures": req.query.numberOfLectures,
 		"summary": req.query.courseSummary,
 		"first": req.query.firstName,
 		"last": req.query.lastName
 	});
-	
+	console.log(newCourse);
 	newCourse.save(afterSaving);
 	
 	function afterSaving(err)
@@ -28,10 +29,11 @@ exports.view = function(req, res){
 		res.render('added_course', {"courseDetails":[
 		{
 			"courseName": req.query.courseName,
-			"courseAuthor": req.query.pUser,
-			"courseDescription": req.query.courseDescription,
-			"coursePicture": req.query.coursePicture,
-			"lectureURL": req.query.lectureURL,
+			"author": req.query.pUser,
+			"description": req.query.courseDescription,
+			"courseImageURL": req.query.coursePicture,
+			"lengthOfLectures": req.query.lectureLength,
+			"numberOfLectures": req.query.numLectures,
 			"summary": req.query.courseSummary,
 			"first": req.query.firstName,
 			"last": req.query.lastName

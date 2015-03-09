@@ -15,7 +15,7 @@ var ProjectSchema = new Mongoose.Schema({
 		"image": String,
 		"first": String,
 		"last": String,
-		"rating": Number
+		"rating": Number,
 });
 
 var UserSchema = new Mongoose.Schema({

@@ -77,25 +77,30 @@
 <br>
       <div class="form-group">
         <label for="exampleInputDescription2">Course Summary</label>
-		<li><br><strong id="currentCourseSummary">{{summary}}</strong></li>
-        <textarea type="email" class="form-control" rows="5" id="courseSummary" placeholder="Guide for your students to get started. This will be shown after they enroll in this course.">{{summary}}</textarea>
+		<li><strong id="currentCourseSummary">{{summary}}</strong></li>
+        <textarea type="email" class="form-control" rows="5" id="courseSummary" name="courseSummary" placeholder="Guide for your students to get started. This will be shown after they enroll in this course.">{{summary}}</textarea>
 		<button  class="btn btn-default" type="button" id="editSummary">Edit</button>
       </div>
 <br>
       <div class="form-group">
         <label for="exampleInputLessonPicture1">Course Picture*</label>
-		<li></li>
-		<img src="{{coursePicture}}" height="82" width="151" id="currentCoursePicture">
+		<li><img src="{{coursePicture}}" height="82" width="151" id="currentCoursePicture"></li>
         <input type="text" class="form-control" id="coursePicture" placeholder="Enter Link to Image" name="coursePicture" value="{{coursePicture}}">
 		<br><button  class="btn btn-default" type="button" id="editPicture">Edit</button>
       </div>
 <br>
       <div class="form-group">
-        <label for="exampleInputLinkForMaterials">Link to Course Lectures*</label>
-		<li></li>
-		<a href="{{lectureURL}}" id="currentCourseLecture">{{lectureURL}}</a>
-        <input type="text" class="form-control" id="courseLecture" placeholder="Copy and paste your link for your course materials." name="lectureURL" value="{{lectureURL}}">
+        <label for="exampleInputLinkForMaterials">Average  Hours Per Lesson*</label>
+		<li><strong id="currentCourseLecture">{{lengthOfLectures}}</strong></li>		
+        <input type="text" class="form-control" id="courseLecture" placeholder="Put how many hours each session typically lasts" name="lengthOfLectures" value="{{lengthOfLectures}}">
 		<br><button  class="btn btn-default" type="button" id="editLecture">Edit</button>
+      </div>
+	  
+	  <div class="form-group">
+        <label for="exampleInputLinkForMaterials">Total Expected Time Commitment in Hours*</label>
+		<li><strong id="currentCourseLength">{{numberOfLectures}}</strong></li>
+        <input type="text" class="form-control" id="numberOfLectures" placeholder="Put how many hours each student would need to put in to finish this course" name="numberOfLectures" value="{{numberOfLectures}}">
+		<br><button  class="btn btn-default" type="button" id="editNumber">Edit</button>
       </div>
 
 	 <button  class="btn btn-primary btn-block" role="button"> Submit Course</button>
@@ -110,12 +115,14 @@ var descriptionShow = 0;
 var summaryShow = 0;
 var pictureShow = 0;
 var lectureShow = 0;
+var numberShow = 0;
 
 $("#courseName").hide();
 $("#courseDescription").hide();
 $("#courseSummary").hide();
 $("#coursePicture").hide();
 $("#courseLecture").hide();
+$("#numberOfLectures").hide();
 
 	$(document).ready(function(){
 		$("#editCourseTitle").click(function(){
@@ -191,17 +198,34 @@ $("#courseLecture").hide();
 			if(lectureShow ==0)
 			{
 				lectureShow = 1;
-				document.getElementById("editLecture").innerHTML="Save Course Lecture Link";
+				document.getElementById("editLecture").innerHTML="Save Average  Hours Per Lesson";
 			}
 			else if(lectureShow==1)
 			{
-				summaryShow = 0;
-				document.getElementById("editSummary").innerHTML="Edit Course Lecture Link";
+				lectureShow = 0;
+				document.getElementById("editLecture").innerHTML="Edit Average  Hours Per Lesson";
 				document.getElementById("currentCourseLecture").innerHTML = document.getElementById("courseLecture").value;
 			}
 			});
 		});	
 
+	$(document).ready(function(){
+		$("#editNumber").click(function(){
+			$("#numberOfLectures").toggle();
+			if(numberShow ==0)
+			{
+				numberShow = 1;
+				document.getElementById("editNumber").innerHTML="Save Total Expected Time Commitment in Hours";
+			}
+			else if(numberShow==1)
+			{
+				numberShow = 0;
+				document.getElementById("editNumber").innerHTML="Edit Total Expected Time Commitment in Hours";
+				document.getElementById("currentCourseLength").innerHTML = document.getElementById("numberOfLectures").value;
+			}
+			});
+		});		
+		
 		function changeToCurrent()
 		{
 			document.getElementById("courseLecture").value = document.getElementById("currentCourseLecture").innerHTML;
@@ -209,6 +233,7 @@ $("#courseLecture").hide();
 			document.getElementById("courseSummary").value = document.getElementById("currentCourseSummary").innerHTML;
 			document.getElementById("courseDescription").value = document.getElementById("currentCourseDescription").innerHTML;
 			document.getElementById("courseName").value = document.getElementById("currentCourseTitle").innerHTML;
+			document.getElementById("numberOfLectures").value = document.getElementById("currentCourseLength").innerHTML;
 		}
 </script>
 </body>
