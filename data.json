@@ -14,8 +14,9 @@
 			"first": "Scott",
 			"last": "Klemmer",
 			"rating": "0",
-			"category": "",
-			"numRaters": "0"
+			"category": "Academics",
+			"numRaters": "0",
+			"rated": "false"
 		},
 		{
 			"courseName": "Pro NBA Basketball Secrets",
@@ -29,7 +30,11 @@
 			"summary": "pro nba basketball description",
 			"price": "$200",
 			"first": "Khorshid",
-			"last": "Zimmermann"
+			"last": "Zimmermann",
+			"rating": "0",
+			"category": "Fitness",
+			"numRaters": "0",
+			"rated": "false"
 		},
 		{
 			"courseName": "Beginner Piano Lessons Pop Music",
@@ -43,7 +48,11 @@
 			"summary": "beginner piano lessons description",
 			"price": "$90",
 			"first": "Bridget",
-			"last": "Jones"
+			"last": "Jones",
+			"rating": "0",
+			"category": "Arts",
+			"numRaters": "0",
+			"rated": "false"
 		},
 		{
 			"courseName": "Still Life Studies for Novices",
@@ -57,7 +66,11 @@
 			"summary": "still life studies description",
 			"price": "$50",
 			"first": "Jess",
-			"last": "Dam"
+			"last": "Dam",
+			"rating": "0",
+			"category": "Arts",
+			"numRaters": "0",
+			"rated": "false"
 		},
 		{
 			"courseName": "Lets Make Trigonometry Fun",
@@ -71,7 +84,11 @@
 			"summary": "lets make trig fun description",
 			"price": "$40",
 			"first": "Oluwaseun",
-			"last": "Vinci"
+			"last": "Vinci",
+			"rating": "0",
+			"category": "Academics",
+			"numRaters": "0",
+			"rated": "false"
 		},
 		{
 			"courseName": "Intro to Making Delicious Java…Programs",
@@ -85,7 +102,11 @@
 			"summary": "into to making delicious java programs description",
 			"price": "$100",
 			"first": "John C.",
-			"last": "Doe"
+			"last": "Doe",
+			"rating": "0",
+			"category": "Academics",
+			"numRaters": "0",
+			"rated": "false"
 
 		},
 		
@@ -101,7 +122,11 @@
 			"summary": "gardening for arid landscapes description",
 			"price": "$50",
 			"first": "John C.",
-			"last": "Doe"
+			"last": "Doe",
+			"rating": "0",
+			"category": "Other",
+			"numRaters": "0",
+			"rated": "false"
 		},
 		{
 			"courseName": "Game Characters for MMO Noobs",
@@ -115,7 +140,11 @@
 			"summary": " game characters for mmo noobs description",
 			"price": "$120",
 			"first": "Shu",
-			"last": "Hobson"
+			"last": "Hobson",
+			"rating": "0",
+			"category": "Academics",
+			"numRaters": "0",
+			"rated": "false"
 		},
 		{
 			"courseName": "Relax and De-stress",
@@ -130,6 +159,10 @@
 			"price": "$30",
 			"first": "Nuka",
 			"last": "Noschese"
+			"rating": "0",
+			"category": "Fitness",
+			"numRaters": "0",
+			"rated": "false"
 		},
 		{
 			"courseName": "Setting up Servers",
@@ -143,7 +176,11 @@
 			"summary": " setting up servers description",
 			"price": "$200",
 			"first": "Neilina",
-			"last": "Hustovi"
+			"last": "Hustovi",
+			"rating": "0",
+			"category": "Academics",
+			"numRaters": "0",
+			"rated": "false"
 		}
 	],
 	"users":[
