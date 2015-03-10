@@ -13,8 +13,9 @@
             "price": "$3000",
 			"first": "Scott",
 			"last": "Klemmer",
-			"rating": "5",
-			"category": ""
+			"rating": "0",
+			"category": "",
+			"numRaters": "0"
 		},
 		{
 			"courseName": "Pro NBA Basketball Secrets",

@@ -16,7 +16,8 @@ var ProjectSchema = new Mongoose.Schema({
 		"first": String,
 		"last": String,
 		"rating": Number,
-		"category": String
+		"category": String,
+		"numRaters": Number
 });
 
 var UserSchema = new Mongoose.Schema({
