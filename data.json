@@ -12,7 +12,9 @@
 			"summary": "intro to hci description",
             "price": "$3000",
 			"first": "Scott",
-			"last": "Klemmer"
+			"last": "Klemmer",
+			"rating": "5",
+			"category": ""
 		},
 		{
 			"courseName": "Pro NBA Basketball Secrets",
