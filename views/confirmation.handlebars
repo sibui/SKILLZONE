@@ -64,7 +64,7 @@
         <label for="exampleInputEmail1" >Course Title*</label>
 		<li><strong id="currentCourseTitle">{{courseName}}</strong></li>
         <input  type="text" class="form-control" id="courseName" placeholder="" name="courseName" value="{{courseName}}" >
-		<button  class="btn btn-default" type="button" id="editCourseTitle">Edit Course Title</button>
+		<button  class="btn btn-default" type="button" id="editCourseTitle">Edit</button>
       </div>
 
 <br>
@@ -103,6 +103,21 @@
 		<br><button  class="btn btn-default" type="button" id="editNumber">Edit</button>
       </div>
 
+	<div class="form-group">
+	  <label for="exampleInputLinkForMaterials">Course Category*</label>
+	  <li><strong id="currentCourseCategory">{{category}}</strong></li>
+		<select name="category" id="classCategory" form="add_a_course">
+			<option value="Other">Select a Category</option>
+			<option value="Arts">Arts</option>
+			<option value="Academics">Academics</option>
+			<option value="Fitness">Fitness</option>
+			<option value="Other">Other</option>
+		</select>
+		<br><br>
+		</center>
+		<button  class="btn btn-default" type="button" id="editCategory">Edit</button>
+	  </div>
+	  
 	 <button  class="btn btn-primary btn-block" role="button"> Submit Course</button>
 </form>
 {{/each}}          
@@ -116,6 +131,7 @@ var summaryShow = 0;
 var pictureShow = 0;
 var lectureShow = 0;
 var numberShow = 0;
+var categoryShow = 0;
 
 $("#courseName").hide();
 $("#courseDescription").hide();
@@ -123,6 +139,7 @@ $("#courseSummary").hide();
 $("#coursePicture").hide();
 $("#courseLecture").hide();
 $("#numberOfLectures").hide();
+$("#classCategory").hide();
 
 	$(document).ready(function(){
 		$("#editCourseTitle").click(function(){
@@ -224,7 +241,24 @@ $("#numberOfLectures").hide();
 				document.getElementById("currentCourseLength").innerHTML = document.getElementById("numberOfLectures").value;
 			}
 			});
-		});		
+		});	
+
+$(document).ready(function(){
+		$("#editCategory").click(function(){
+			$("#classCategory").toggle();
+			if(categoryShow ==0)
+			{
+				categoryShow = 1;
+				document.getElementById("editCategory").innerHTML="Save Course Category";
+			}
+			else if(categoryShow==1)
+			{
+				categoryShow = 0;
+				document.getElementById("editCategory").innerHTML="Edit Course Category";
+				document.getElementById("currentCourseCategory").innerHTML = document.getElementById("classCategory").value;
+			}
+			});
+		});			
 		
 		function changeToCurrent()
 		{

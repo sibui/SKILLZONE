@@ -14,7 +14,9 @@ exports.view = function(req, res){
 		"numberOfLectures": req.query.numberOfLectures,
 		"summary": req.query.courseSummary,
 		"first": req.query.firstName,
-		"last": req.query.lastName
+		"last": req.query.lastName,
+		"rating": 0,
+		"category": req.query.category
 	});
 	console.log(newCourse);
 	newCourse.save(afterSaving);

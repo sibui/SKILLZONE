@@ -22,13 +22,13 @@ font-family: helvetica;
 
 }
 .courses h5 {
-    text-align: center;
+    text-align: left;
 
 }
 
 
 .courses p {
-    text-align: center;
+    text-align: left;
 
 }
 
@@ -211,3 +211,5 @@ img .desaturate {
         color: #333;
     }
 }
+
+

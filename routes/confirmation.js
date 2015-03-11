@@ -4,6 +4,7 @@ exports.view = function(req, res){
 	console.log(req.query.numLectures);
 	console.log(req.queryfirstName);
 	console.log(req.querylastName);
+	var random_num = Math.random();
 	res.render('confirmation', {"confirmDetails":[
 		{
 			"courseName": req.query.courseName,
@@ -14,7 +15,8 @@ exports.view = function(req, res){
 			"first": req.query.firstName,
 			"last": req.query.lastName,
 			"numberOfLectures": req.query.numLectures,
-			"lengthOfLectures": req.query.lectureLength
+			"lengthOfLectures": req.query.lectureLength,
+			"category": req.query.category
 		}
 	]} );
 };

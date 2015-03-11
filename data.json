@@ -13,7 +13,7 @@
             "price": "$3000",
 			"first": "Scott",
 			"last": "Klemmer",
-			"rating": "0",
+			"rating": "5",
 			"category": "Academics",
 			"numRaters": "0",
 			"rated": "false"
@@ -31,7 +31,7 @@
 			"price": "$200",
 			"first": "Khorshid",
 			"last": "Zimmermann",
-			"rating": "0",
+			"rating": "3",
 			"category": "Fitness",
 			"numRaters": "0",
 			"rated": "false"
@@ -49,7 +49,7 @@
 			"price": "$90",
 			"first": "Bridget",
 			"last": "Jones",
-			"rating": "0",
+			"rating": "4",
 			"category": "Arts",
 			"numRaters": "0",
 			"rated": "false"
@@ -67,7 +67,7 @@
 			"price": "$50",
 			"first": "Jess",
 			"last": "Dam",
-			"rating": "0",
+			"rating": "3",
 			"category": "Arts",
 			"numRaters": "0",
 			"rated": "false"
@@ -85,7 +85,7 @@
 			"price": "$40",
 			"first": "Oluwaseun",
 			"last": "Vinci",
-			"rating": "0",
+			"rating": "5",
 			"category": "Academics",
 			"numRaters": "0",
 			"rated": "false"
@@ -103,7 +103,7 @@
 			"price": "$100",
 			"first": "John C.",
 			"last": "Doe",
-			"rating": "0",
+			"rating": "3",
 			"category": "Academics",
 			"numRaters": "0",
 			"rated": "false"
@@ -123,7 +123,7 @@
 			"price": "$50",
 			"first": "John C.",
 			"last": "Doe",
-			"rating": "0",
+			"rating": "4",
 			"category": "Other",
 			"numRaters": "0",
 			"rated": "false"
@@ -141,7 +141,7 @@
 			"price": "$120",
 			"first": "Shu",
 			"last": "Hobson",
-			"rating": "0",
+			"rating": "3",
 			"category": "Academics",
 			"numRaters": "0",
 			"rated": "false"
@@ -159,7 +159,7 @@
 			"price": "$30",
 			"first": "Nuka",
 			"last": "Noschese",
-			"rating": "0",
+			"rating": "5",
 			"category": "Fitness",
 			"numRaters": "0",
 			"rated": "false"
@@ -177,7 +177,7 @@
 			"price": "$200",
 			"first": "Neilina",
 			"last": "Hustovi",
-			"rating": "0",
+			"rating": "4",
 			"category": "Academics",
 			"numRaters": "0",
 			"rated": "false"
