@@ -62,14 +62,14 @@
 	  
       <div class="form-group">
         <label for="exampleInputEmail1" >Course Title*</label>
-		<li><strong id="currentCourseTitle">{{courseName}}</strong></li>
+		<p><strong id="currentCourseTitle">{{courseName}}</strong></p>
         <input  type="text" class="form-control" id="courseName" placeholder="" name="courseName" value="{{courseName}}" >
 		<button  class="btn btn-default pull-right" type="button" id="editCourseTitle">Edit</button>
       </div>
 
       <div class="form-group">
 	  <label for="exampleInputLinkForMaterials">Course Category*</label>
-	  <li><strong id="currentCourseCategory">{{category}}</strong></li>
+	  <p><strong id="currentCourseCategory">{{category}}</strong></p>
 		<select name="category" id="classCategory" form="add_a_course">
 			<option value="Other">Select a Category</option>
 			<option value="Arts">Arts</option>
@@ -85,21 +85,21 @@
 <br>
       <div class="form-group">
         <label for="exampleInputDescription1">Brief Course Description*</label>
-		<li><strong id="currentCourseDescription">{{courseDescription}}</strong></li>
+		<p><strong id="currentCourseDescription">{{courseDescription}}</strong></p>
         <textarea type="text" class="form-control" rows="5" id="courseDescription" placeholder="Briefly describe your course." name="courseDescription">{{courseDescription}}</textarea>
 		<button  class="btn btn-default pull-right" type="button" id="editDescription">Edit</button>
       </div>
 <br>
       <div class="form-group">
         <label for="exampleInputDescription2">Course Summary</label>
-		<li><strong id="currentCourseSummary">{{summary}}</strong></li>
+		<p><strong id="currentCourseSummary">{{summary}}</strong></p>
         <textarea type="email" class="form-control" rows="5" id="courseSummary" name="courseSummary" placeholder="Guide for your students to get started. This will be shown after they enroll in this course.">{{summary}}</textarea>
 		<button  class="btn btn-default pull-right" type="button" id="editSummary">Edit</button>
       </div>
 <br>
       <div class="form-group">
         <label for="exampleInputLessonPicture1">Course Picture*</label>
-		<li><img src="{{coursePicture}}" height="82" width="151" id="currentCoursePicture"></li>
+		<p><img src="{{coursePicture}}" height="82" width="151" id="currentCoursePicture"></p>
         <input type="text" class="form-control" id="coursePicture" placeholder="Enter Link to Image" name="coursePicture" value="{{coursePicture}}">
 		<br><button  class="btn btn-default pull-right" type="button" id="editPicture">Edit</button>
       </div>
@@ -107,28 +107,28 @@
 
 	  <div class="form-group">
         <label for="exampleInputLinkForMaterials">Course Material Link</label>
-		<li><strong id="currentCourseLecture">{{courseLink}}</strong></li>		
+		<p><strong id="currentCourseLecture">{{courseLink}}</strong></p>		
         <input type="text" class="form-control" id="courseLecture" placeholder="Put your course link here" name="lectureLink" value="{{courseLink}}">
 		<br><button  class="btn btn-default pull-right" type="button" id="editLecture">Edit</button>
       </div>
 <br>
       <div class="form-group">
         <label for="exampleInputLinkForMaterials">Hours/Meeting*</label>
-		<li><strong id="currentCourseHours">{{lengthOfLectures}}</strong></li>		
+		<p><strong id="currentCourseHours">{{lengthOfLectures}}</strong></p>		
         <input type="text" class="form-control" id="courseHours" placeholder="Put how many hours each session typically lasts" name="lengthOfLectures" value="{{lengthOfLectures}}">
 		<br><button  class="btn btn-default pull-right" type="button" id="editHours">Edit</button>
       </div>
 	  
 	  <div class="form-group">
         <label for="exampleInputLinkForMaterials">Total Number of Meetings*</label>
-		<li><strong id="currentCourseWeek">{{numLectureWk}}</strong></li>
+		<p><strong id="currentCourseWeek">{{numLectureWk}}</strong></p>
         <input type="text" class="form-control" id="courseWeek" placeholder="Put how many hours each student would need to put in to finish this course" name="courseWeek" value="{{numLectureWk}}">
 		<br><button  class="btn btn-default pull-right" type="button" id="editWeek">Edit</button>
       </div>
 	  
 	  <div class="form-group">
         <label for="exampleInputLinkForMaterials">Hours/Week*</label>
-		<li><strong id="currentCourseLength">{{numberOfLectures}}</strong></li>
+		<p><strong id="currentCourseLength">{{numberOfLectures}}</strong></p>
         <input type="text" class="form-control" id="numberOfLectures" placeholder="Put how many hours each student would need to put in to finish this course" name="numberOfLectures" value="{{numberOfLectures}}">
 		<br><button  class="btn btn-default pull-right" type="button" id="editNumber">Edit</button>
       </div>
