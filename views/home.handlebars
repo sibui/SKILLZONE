@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="Skillzone">
-  <title>Learning anytime, anywhere.</title>
+  <title>Skillzone - Learning anytime, anywhere.</title>
   <link rel="shortcut icon" href="img/favicon.ico">
   <link rel="apple-touch-icon" href="img/skillzone-logo.png">
-  <link rel="apple-touch-startup-image" href="img/start-screen.png">
+  <link rel="apple-touch-startup-image" href="img/startup-image.png">
   <!--The size of the startup image for iPhone 5S/5C is 640 x 1136 (pixels).-->
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -27,8 +27,32 @@
 
 <body>
 <div class="container">
+  
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <button class="navbar-btn">
+            <a href="/" class="btn" onclick="history.back();return false;"><i class="fa fa-arrow-left fa-fw"></i></a>
+          </button>
+          <a class="navbar-brand" ><img style="max-width:100px; margin-top: -7px;" src="img/logo-black.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/sign_up"><i class="fa fa-users fa-fw"></i>&nbsp; Join us</a></li>
+            <li><a href="/sign_in"><i class="fa fa-sign-in fa-fw"></i>&nbsp; Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
 	<header class="header">
-			<h1>Welcome to SkillZone!</h1>
+			<h1>Welcome to Skillzone!</h1>
   </header>
 </div>
 <br>
