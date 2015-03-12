@@ -137,7 +137,7 @@ function getCookie(cname) {
 
 function whoseProfile()
 {
-	document.getElementById("profileName").innerHTML = document.getElementById("firstName").innerHTML+" "+document.getElementById("lastName").innerHTML+"'s Profile";
+	document.getElementById("profileName").innerHTML = document.getElementById("firstName").innerHTML+" "+document.getElementById("lastName").innerHTML;
 	if(document.getElementById("emailCheck").innerHTML != getCookie("username"))
 	{
 			$("#editImage").hide();
