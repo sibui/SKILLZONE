@@ -89,11 +89,26 @@
 		<br><button  class="btn btn-default" type="button" id="editPicture">Edit</button>
       </div>
 <br>
+
+	  <div class="form-group">
+        <label for="exampleInputLinkForMaterials">Course Link</label>
+		<li><strong id="currentCourseLecture">{{courseLink}}</strong></li>		
+        <input type="text" class="form-control" id="courseLecture" placeholder="Put your course link here" name="lectureLink" value="{{courseLink}}">
+		<br><button  class="btn btn-default" type="button" id="editLecture">Edit</button>
+      </div>
+<br>
       <div class="form-group">
         <label for="exampleInputLinkForMaterials">Average  Hours Per Lesson*</label>
-		<li><strong id="currentCourseLecture">{{lengthOfLectures}}</strong></li>		
-        <input type="text" class="form-control" id="courseLecture" placeholder="Put how many hours each session typically lasts" name="lengthOfLectures" value="{{lengthOfLectures}}">
-		<br><button  class="btn btn-default" type="button" id="editLecture">Edit</button>
+		<li><strong id="currentCourseHours">{{lengthOfLectures}}</strong></li>		
+        <input type="text" class="form-control" id="courseHours" placeholder="Put how many hours each session typically lasts" name="lengthOfLectures" value="{{lengthOfLectures}}">
+		<br><button  class="btn btn-default" type="button" id="editHours">Edit</button>
+      </div>
+	  
+	  <div class="form-group">
+        <label for="exampleInputLinkForMaterials">Number of Lessons Per Week*</label>
+		<li><strong id="currentCourseWeek">{{numLectureWk}}</strong></li>
+        <input type="text" class="form-control" id="courseWeek" placeholder="Put how many hours each student would need to put in to finish this course" name="courseWeek" value="{{numLectureWk}}">
+		<br><button  class="btn btn-default" type="button" id="editWeek">Edit</button>
       </div>
 	  
 	  <div class="form-group">
@@ -113,7 +128,7 @@
 			<option value="Fitness">Fitness</option>
 			<option value="Other">Other</option>
 		</select>
-		<br><br>
+		<br>
 		</center>
 		<button  class="btn btn-default" type="button" id="editCategory">Edit</button>
 	  </div>
@@ -132,6 +147,8 @@ var pictureShow = 0;
 var lectureShow = 0;
 var numberShow = 0;
 var categoryShow = 0;
+var hoursShow = 0;
+var weekShow = 0;
 
 $("#courseName").hide();
 $("#courseDescription").hide();
@@ -140,6 +157,8 @@ $("#coursePicture").hide();
 $("#courseLecture").hide();
 $("#numberOfLectures").hide();
 $("#classCategory").hide();
+$("#courseHours").hide();
+$("#courseWeek").hide();
 
 	$(document).ready(function(){
 		$("#editCourseTitle").click(function(){
@@ -215,12 +234,12 @@ $("#classCategory").hide();
 			if(lectureShow ==0)
 			{
 				lectureShow = 1;
-				document.getElementById("editLecture").innerHTML="Save Average  Hours Per Lesson";
+				document.getElementById("editLecture").innerHTML="Save Course Links";
 			}
 			else if(lectureShow==1)
 			{
 				lectureShow = 0;
-				document.getElementById("editLecture").innerHTML="Edit Average  Hours Per Lesson";
+				document.getElementById("editLecture").innerHTML="Edit Course Links";
 				document.getElementById("currentCourseLecture").innerHTML = document.getElementById("courseLecture").value;
 			}
 			});
@@ -256,6 +275,40 @@ $(document).ready(function(){
 				categoryShow = 0;
 				document.getElementById("editCategory").innerHTML="Edit Course Category";
 				document.getElementById("currentCourseCategory").innerHTML = document.getElementById("classCategory").value;
+			}
+			});
+		});			
+		
+$(document).ready(function(){
+		$("#editHours").click(function(){
+			$("#courseHours").toggle();
+			if(hoursShow ==0)
+			{
+				hoursShow = 1;
+				document.getElementById("editHours").innerHTML="Save Average Hours Per Lesson";
+			}
+			else if(hoursShow==1)
+			{
+				hoursShow = 0;
+				document.getElementById("editHours").innerHTML="Edit Average Hours Per Lesson";
+				document.getElementById("currentCourseHours").innerHTML = document.getElementById("courseHours").value;
+			}
+			});
+		});
+		
+$(document).ready(function(){
+		$("#editWeek").click(function(){
+			$("#courseWeek").toggle();
+			if(weekShow ==0)
+			{
+				weekShow = 1;
+				document.getElementById("editWeek").innerHTML="Save Number of Lessons Per Week";
+			}
+			else if(weekShow==1)
+			{
+				weekShow = 0;
+				document.getElementById("editWeek").innerHTML="Edit Number of Lessons Per Week";
+				document.getElementById("currentCourseWeek").innerHTML = document.getElementById("courseWeek").value;
 			}
 			});
 		});			

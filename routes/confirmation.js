@@ -16,7 +16,9 @@ exports.view = function(req, res){
 			"last": req.query.lastName,
 			"numberOfLectures": req.query.numLectures,
 			"lengthOfLectures": req.query.lectureLength,
-			"category": req.query.category
+			"category": req.query.category,
+			"courseLink": req.query.lectureLink,
+			"numLectureWk": req.query.lectureWeek
 		}
 	]} );
 };

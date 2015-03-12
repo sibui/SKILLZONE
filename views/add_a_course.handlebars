@@ -69,13 +69,19 @@
       </div>
 
       <div class="form-group">
-        <center><label for="exampleInputLessonPicture1">Choose your picture or copy and paste the link of image*</center></label><br>
+        <center><label for="exampleInputLessonPicture1">Click a picture below or paste the link of your image in the textbox*</center></label><br>
 		<center><img src="img/default-thumbnail.png" height="82" width="151" id="defaultPicture" onclick="setImage()"></img>
 		<img src="img/sports-icon.png" height="82" width="151" id="sportPicture" onclick="setImage1()"></img><br>
-		<small>Try this! https://www.google.com/images/srpr/logo11w.png</small></center>
+		<small>For example: https://www.google.com/images/srpr/logo11w.png</small></center>
         <input type="text" class="form-control" id="textLink" placeholder="Enter Link to Image Here" name="coursePicture" required>
       </div>
 
+	  <div class="form-group">
+        <center><label for="exampleInputLinkForMaterials">Course Links (optional)</center></label>
+		<small>If you wish to provide online resources, please provide the link to them below</small>
+        <input type="text" class="form-control" id="exampleInputLinkForMaterials" placeholder="Put your course link here" name="lectureLink">
+      </div>
+	  
       <div class="form-group">
         <center><label for="exampleInputLinkForMaterials">Average  Hours Per Lesson*</center></label>
 		<small>For example, if your sessions last roughly 2 Hours, type in 2 in the box below.</small>
@@ -83,13 +89,18 @@
       </div>
 
 	  <div class="form-group">
+        <center><label for="exampleInputLinkForMaterials">Number of Lessons Per Week*</center></label>
+        <input type="text" class="form-control" id="exampleInputLinkForMaterials" placeholder="Put how many lessons per week your course will have" name="lectureWeek" required>
+      </div>	  
+	  
+	  <div class="form-group">
         <center><label for="exampleInputLinkForMaterials">Total Expected Time Commitment (in Hours)</center></label>
 		<small>For example, if you expect that your students meet with you for a total of 20 hours, put in 20 in the box below.</small>
         <input type="text" class="form-control" id="exampleInputLinkForMaterials" placeholder="Put how many hours each student would need to put in to finish this course" name="numLectures" required>
       </div>
 	  
 	  <div class="form-group">
-	  <center><label for="exampleInputLinkForMaterials">Course Category</label></center>
+	  <center><label for="exampleInputLinkForMaterials">Course Category*</label></center>
 	  <center>
 		<select name="category" form="add_a_course">
 			<option value="Other">Select a Category</option>
@@ -103,7 +114,7 @@
 
     <div class="checkbox" class="span7 text-center">
         <label>
-          <input type="checkbox"> I agree to the <a href="term_of_use" target="_blank">terms of use</a>.
+          <input type="checkbox" required> I agree to the <a href="term_of_use" target="_blank">terms of use</a>.
         </label>
      </div> 
 	 <button  class="btn btn-primary btn-block" role="button"> Review and Confirm</button>

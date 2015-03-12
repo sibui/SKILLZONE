@@ -37,6 +37,7 @@ var update_summary = require('./routes/update_summary');
 var update_image = require('./routes/update_image');
 var update_default = require('./routes/update_default');
 var redirect_default = require('./routes/redirect_default');
+var rate_course = require('./routes/rate_course');
 
 // Example route
 // var user = require('./routes/user');
@@ -97,8 +98,8 @@ app.get('/unenroll_in_class', unenroll_in_class.view);
 app.get('/update_summary', update_summary.view);
 app.get('/update_image', update_image.view);
 app.get('/update_default', update_default.view);
-app.get('/redirect_default', redirect_default.view)
-
+app.get('/redirect_default', redirect_default.view);
+app.get('/rate_course', rate_course.view);
 // Example route
 // app.get('/users', user.list);
 

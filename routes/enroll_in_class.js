@@ -26,7 +26,7 @@ exports.view = function(req, res){
 		res.render('enroll_in_class');
 	}*/
 	
-	models.Project.update({"courseName": req.query.courseName},{$set:{"studentEnrolled": req.query.pUser}},{upsert:true},callback);
+	models.Project.update({"courseName": req.query.courseName},{$set:{"studentEnrolled": req.query.pUser, "rated": "false"}},{upsert:true},callback);
 	
 	function callback(err)
 	{

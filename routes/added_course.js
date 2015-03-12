@@ -16,7 +16,11 @@ exports.view = function(req, res){
 		"first": req.query.firstName,
 		"last": req.query.lastName,
 		"rating": 0,
-		"category": req.query.category
+		"category": req.query.category,
+		"numRaters": 0,
+		"courseLink": req.query.lectureLink,
+		"numLecturesWk": req.query.courseWeek
+		
 	});
 	console.log(newCourse);
 	newCourse.save(afterSaving);

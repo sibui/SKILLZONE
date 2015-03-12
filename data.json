@@ -15,8 +15,9 @@
 			"last": "Klemmer",
 			"rating": "5",
 			"category": "Academics",
-			"numRaters": "0",
-			"rated": "false"
+			"numRaters": "1",
+			"rated": "false",
+			"numLecturesWk": "2"
 		},
 		{
 			"courseName": "Pro NBA Basketball Secrets",
@@ -33,15 +34,16 @@
 			"last": "Zimmermann",
 			"rating": "3",
 			"category": "Fitness",
-			"numRaters": "0",
-			"rated": "false"
+			"numRaters": "1",
+			"rated": "false",
+			"numLecturesWk": "3"
 		},
 		{
 			"courseName": "Beginner Piano Lessons Pop Music",
 			"author": "bridget.jones8876@gmail.com",
 			"description": "Start playing some pop songs with a real life tutor. No musical experience necessary!",
 			"courseImageURL": "https://c1.staticflickr.com/9/8574/15818390018_0fce2de33d_m.jpg",
-			"courseLink": "dropbox.com/pianolessons",
+			"courseLink": "http://dropbox.com/pianolessons",
 		    "numberOfLectures": "5",
 			"lengthOfLectures": "4",
 			"studentEnrolled": "Bhima Santiago@example.com",
@@ -51,15 +53,16 @@
 			"last": "Jones",
 			"rating": "4",
 			"category": "Arts",
-			"numRaters": "0",
-			"rated": "false"
+			"numRaters": "1",
+			"rated": "false",
+			"numLecturesWk": "1"
 		},
 		{
 			"courseName": "Still Life Studies for Novices",
 			"author": "jess.art.teacher343@gmail.com",
 			"description": "Still life with a wide array with mediums",
 			"courseImageURL": "http://render.fineartamerica.com/images/images-print-search/images-medium-5/preparation-still-life-mountain-dreams.jpg",
-			"courseLink": "dropbox.com/artlessons",
+			"courseLink": "http://dropbox.com/artlessons",
 			"numberOfLectures": "5",
 			"lengthOfLectures": "4",
 			"studentEnrolled": "TienNapolielloexamplestudent@example.com",
@@ -69,15 +72,16 @@
 			"last": "Dam",
 			"rating": "3",
 			"category": "Arts",
-			"numRaters": "0",
-			"rated": "false"
+			"numRaters": "1",
+			"rated": "false",
+			"numLecturesWk": "5"
 		},
 		{
 			"courseName": "Lets Make Trigonometry Fun",
 			"author": "superfunmath@hotmail.com",
 			"description": "Let’s make trigonometry more palatable  ",
 			"courseImageURL": "http://o.quizlet.com/CdYd9Lr.EqTuNu5vbp3aiw_m.png ",
-			"courseLink": " #",
+			"courseLink": "",
 		    "numberOfLectures": "5",
 			"lengthOfLectures": "4",
 			"studentEnrolled": "FrancisNorris@gmail.com",
@@ -87,15 +91,16 @@
 			"last": "Vinci",
 			"rating": "5",
 			"category": "Academics",
-			"numRaters": "0",
-			"rated": "false"
+			"numRaters": "1",
+			"rated": "false",
+			"numLecturesWk": "6"
 		},
 		{
 			"courseName": "Intro to Making Delicious Java…Programs",
 			"author": "john@doe.com",
 			"description": "Java for beginners",
 			"courseImageURL": "http://media.publika.md/md/image/201301/w240/cup_of_java_by_neziak_27955900.png",
-			"courseLink": " ",
+			"courseLink": "",
 		    "numberOfLectures": "5",
 			"lengthOfLectures": "4",
 			"studentEnrolled": "GalenosFiore@gmail.com",
@@ -105,8 +110,9 @@
 			"last": "Doe",
 			"rating": "3",
 			"category": "Academics",
-			"numRaters": "0",
-			"rated": "false"
+			"numRaters": "1",
+			"rated": "false",
+			"numLecturesWk": "2"
 
 		},
 		
@@ -115,7 +121,7 @@
 			"author": "john@doe.com",
 			"description": "How to cultivate a drought-resistant garden",
 			"courseImageURL": "http://mw2.google.com/mw-panoramio/photos/small/84749021.jpg",
-			"courseLink": " ",
+			"courseLink": "",
 		    "numberOfLectures": "5",
 			"lengthOfLectures": "4",
 			"studentEnrolled": "IahelUghi@gmail.com",
@@ -125,15 +131,16 @@
 			"last": "Doe",
 			"rating": "4",
 			"category": "Other",
-			"numRaters": "0",
-			"rated": "false"
+			"numRaters": "1",
+			"rated": "false",
+			"numLecturesWk": "6"
 		},
 		{
 			"courseName": "Game Characters for MMO Noobs",
 			"author": "allyourbase@gmail.com",
 			"description": "3D Character Design and Modelling for MMO’s",
 			"courseImageURL": "http://ichef.bbci.co.uk/images/ic/240x135/p018ctdd.jpg",
-			"courseLink": " ",
+			"courseLink": "",
 		    "numberOfLectures": "5",
 			"lengthOfLectures": "4",
 			"studentEnrolled": "NilamLindholm@hotmail.com",
@@ -143,15 +150,16 @@
 			"last": "Hobson",
 			"rating": "3",
 			"category": "Academics",
-			"numRaters": "0",
-			"rated": "false"
+			"numRaters": "1",
+			"rated": "false",
+			"numLecturesWk": "4"
 		},
 		{
 			"courseName": "Relax and De-stress",
 			"author": "destressalot@gmail.com",
 			"description": "Help rewind and relax and prevent stress from overtaking your life",
 			"courseImageURL": "http://img0.yytcdn.com/uploads/artists/18539/AB1101373B1D783E848BB1AB7301557F.jpg",
-			"courseLink": " ",
+			"courseLink": "",
 		    "numberOfLectures": "5",
 			"lengthOfLectures": "4",
 			"studentEnrolled": "SìneNelson@yahoo.com",
@@ -161,15 +169,16 @@
 			"last": "Noschese",
 			"rating": "5",
 			"category": "Fitness",
-			"numRaters": "0",
-			"rated": "false"
+			"numRaters": "1",
+			"rated": "false",
+			"numLecturesWk": "3"
 		},
 		{
 			"courseName": "Setting up Servers",
 			"author": "serverserval@gmail.com",
 			"description": "How to set up your own server!",
 			"courseImageURL": "http://farm3.staticflickr.com/2461/3726757043_6cb518e5eb_m.jpg",
-			"courseLink": " ",
+			"courseLink": "",
 		    "numberOfLectures": "5",
 			"lengthOfLectures": "4",
 			"studentEnrolled": "HelleGorka@yahoo.com",
@@ -179,8 +188,9 @@
 			"last": "Hustovi",
 			"rating": "4",
 			"category": "Academics",
-			"numRaters": "0",
-			"rated": "false"
+			"numRaters": "1",
+			"rated": "false",
+			"numLecturesWk": "1"
 		}
 	],
 	"users":[
