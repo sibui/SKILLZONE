@@ -29,7 +29,7 @@
             <span class="icon-bar"></span>
           </button>
           <button class="navbar-btn">
-            <a href="/" class="btn" onclick="history.back();return false;"><i class="fa fa-arrow-left fa-fw"></i></a>
+            <a href="/" class="btn" onclick="history.back();return false;"><i class="fa fa-chevron-left fa-fw"></i></a>
           </button>
           <a class="navbar-brand" >Add Course</a>
         </div>
@@ -54,64 +54,76 @@
         <input type="hidden" class="form-control" id="lastName" placeholder="" name="lastName" value="{{last}}">
 	  {{/each}}
       <div class="form-group">
-        <center><label for="exampleInputEmail1" >Course Title*</center></label>
+        <label for="exampleInputEmail1" >Course Name*</label>
         <input type="text" class="form-control" id="exampleInputEmail1" placeholder="" name="courseName" required>
       </div>
 
       <div class="form-group">
-        <center><label for="exampleInputDescription1">Course Description*</center></label>
+        <label for="exampleInputLinkForMaterials">Course Category*</label>
+        <select name="category" form="add_a_course">
+          <option value="Other">Select a Category</option>
+          <option value="Arts">Arts</option>
+          <option value="Academics">Academics</option>
+          <option value="Fitness">Fitness</option>
+          <option value="Other">Other</option>
+        </select> 
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputDescription1">Course Description*</label>
         <textarea type="text" class="form-control" rows="5" id="exampleInputDescriptions" placeholder="Briefly describe your course." name="courseDescription" required></textarea>
       </div>
 
       <div class="form-group">
-        <center><label for="exampleInputDescription2">Course Summary*</center></label>
-        <textarea type="email" class="form-control" rows="5" id="exampleInputDescription2" placeholder="Explain more in depth about your course" name="courseSummary" required></textarea>
+        <label for="exampleInputDescription2">Course Summary*</label>
+        <textarea type="email" class="form-control" rows="5" id="exampleInputDescription2" placeholder="Explain more in depth about your course." name="courseSummary" required></textarea>
       </div>
 
       <div class="form-group">
-        <center><label for="exampleInputLessonPicture1">Click a picture below or paste the link of your image in the textbox*</center></label><br>
-		<center><img src="img/default-thumbnail.png" height="82" width="151" id="defaultPicture" onclick="setImage()"></img>
-		<img src="img/sports-icon.png" height="82" width="151" id="sportPicture" onclick="setImage1()"></img><br>
-		<small>For example: https://www.google.com/images/srpr/logo11w.png</small></center>
-        <input type="text" class="form-control" id="textLink" placeholder="Enter Link to Image Here" name="coursePicture" required>
+        <label for="exampleInputLessonPicture1">Choose a picture or paste your image link in the box*</label>
+        <p>Try this: https://www.google.com/images/srpr/logo11w.png</p>
+        <div class="row">
+          <div class="col-xs-6 col-sm-6">
+            <img src="img/default-thumbnail.png" height="82" width="151" id="defaultPicture" onclick="setImage()"></img>
+          </div>
+          <div class="col-xs-6 col-sm-6">
+      		  <img src="img/sports-icon.png" height="82" width="151" id="sportPicture" onclick="setImage1()"></img>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-6 col-sm-6">
+            <img src="img/academics.png" height="82" width="151" id="academicsPicture" onclick="setImage2()"></img>
+          </div>
+          <div class="col-xs-6 col-sm-6">
+            <img src="img/arts.png" height="82" width="151" id="artsPicture" onclick="setImage3()"></img>
+          </div>
+        </div>
+    <br>
+
+        <input type="text" class="form-control" id="textLink" placeholder="Enter image link here." name="coursePicture" required>
       </div>
 
 	  <div class="form-group">
-        <center><label for="exampleInputLinkForMaterials">Course Links (optional)</center></label>
-		<small>If you wish to provide online resources, please provide the link to them below</small>
-        <input type="text" class="form-control" id="exampleInputLinkForMaterials" placeholder="Put your course link here" name="lectureLink">
+        <label for="exampleInputLinkForMaterials">Course Material Links(optional)</label>
+        <input type="text" class="form-control" id="exampleInputLinkForMaterials" placeholder="If you wish to provide online resources, please enter your links here." name="lectureLink">
       </div>
 	  
       <div class="form-group">
-        <center><label for="exampleInputLinkForMaterials">Average  Hours Per Lesson*</center></label>
-		<small>For example, if your sessions last roughly 2 Hours, type in 2 in the box below.</small>
-        <input type="text" class="form-control" id="exampleInputLinkForMaterials" placeholder="Put how many hours each session typically lasts" name="lectureLength" required>
+        <label for="exampleInputLinkForMaterials">Hours/Meeting*</label>
+        <input type="text" class="form-control" id="exampleInputLinkForMaterials" placeholder="For example, if you plan to offer 2 hours per session, just enter 2." name="lectureLength" required>
       </div>
 
 	  <div class="form-group">
-        <center><label for="exampleInputLinkForMaterials">Number of Lessons Per Week*</center></label>
-        <input type="text" class="form-control" id="exampleInputLinkForMaterials" placeholder="Put how many lessons per week your course will have" name="lectureWeek" required>
+        <label for="exampleInputLinkForMaterials">Total Number of Meetings*</label>
+        <input type="text" class="form-control" id="exampleInputLinkForMaterials" placeholder="Put in the number of sessions your course will have." name="lectureWeek" required>
       </div>	  
 	  
 	  <div class="form-group">
-        <center><label for="exampleInputLinkForMaterials">Total Expected Time Commitment (in Hours)</center></label>
-		<small>For example, if you expect that your students meet with you for a total of 20 hours, put in 20 in the box below.</small>
-        <input type="text" class="form-control" id="exampleInputLinkForMaterials" placeholder="Put how many hours each student would need to put in to finish this course" name="numLectures" required>
+        <label for="exampleInputLinkForMaterials">Hours/Week</label>
+        <input type="text" class="form-control" id="exampleInputLinkForMaterials" placeholder="The total time commitment you would like your student to have per week." name="numLectures" required>
       </div>
 	  
-	  <div class="form-group">
-	  <center><label for="exampleInputLinkForMaterials">Course Category*</label></center>
-	  <center>
-		<select name="category" form="add_a_course">
-			<option value="Other">Select a Category</option>
-			<option value="Arts">Arts</option>
-			<option value="Academics">Academics</option>
-			<option value="Fitness">Fitness</option>
-			<option value="Other">Other</option>
-		</select>
-		</center>
-	  </div>
-
     <div class="checkbox" class="span7 text-center">
         <label>
           <input type="checkbox" required> I agree to the <a href="term_of_use" target="_blank">terms of use</a>.
@@ -132,6 +144,16 @@ function setImage()
 function setImage1()
 {
 	document.getElementById("textLink").value = document.getElementById("sportPicture").src;
+}
+
+function setImage2()
+{
+  document.getElementById("textLink").value = document.getElementById("academicsPicture").src;
+}
+
+function setImage3()
+{
+  document.getElementById("textLink").value = document.getElementById("artsPicture").src;
 }
 </script>
 

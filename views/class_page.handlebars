@@ -41,7 +41,7 @@
             <span class="icon-bar"></span>
           </button>
           <button class="navbar-btn">
-            <a href="/" class="btn" onclick="history.back();return false;"><i class="fa fa-arrow-left fa-fw"></i></a>
+            <a href="/" class="btn" onclick="history.back();return false;"><i class="fa fa-chevron-left fa-fw"></i></a>
           </button>
           <a class="navbar-brand" >Course Detail</a>
         </div>
@@ -102,10 +102,6 @@
 			      <p>{{description}}</p>
 				  <h5><strong>Summary</strong></h5>
 				  <p>{{summary}}</p>
-				  <div id="lectureLink" name="{{courseLink}}">
-					<h5><strong>Course Material Link</strong></h5>
-					<p><a onclick="linkPress()" target="_blank" id="pLink">{{courseLink}}</a></p>
-				  </div>
 				  <h5><strong>Category</strong></h5>
 				  <p>{{category}}</p>
 				  <h5><strong>Hours/Meeting</strong></h5>
@@ -114,6 +110,10 @@
 				  <p>{{numLecturesWk}}</p>
 				  <h5><strong>Hours/Week</strong></h5>
 				  <p>{{numberOfLectures}}</p>
+				  <div id="lectureLink" name="{{courseLink}}">
+					<h5><strong>Course Material Link</strong></h5>
+					<p><a onclick="linkPress()" target="_blank" id="pLink">{{courseLink}}</a></p>
+				  </div>
 				  
 				</div><br>
 				<div id="isRated" name="{{rated}}">
